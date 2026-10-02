@@ -1,0 +1,10 @@
+apiVersion: v1                      # Kubernetes API 버전
+kind: Pod                           # 생성할 Kubernetes Resource
+metadata:                           # Pod 기본 정보
+  name: nginx-pod                   # Pod 이름
+spec:                               # Pod 상세 설정
+  containers:                       # Pod에서 실행할 Container
+    - name: nginx                   # Container 이름
+      image: nginx:1.27             # 사용할 Nginx Image
+      ports:                        # Container Port 설정
+        - containerPort: 80         # Nginx가 사용하는 HTTP Port
