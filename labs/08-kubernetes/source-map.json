@@ -1,0 +1,40 @@
+[
+  {
+    "file": "examples-from-notes/nginx-pod.yaml",
+    "source_url": "https://app.notion.com/p/098ddb1a63778206966701fc28c7fcfb",
+    "source_fence": 12,
+    "source_line": 585,
+    "sha256": "46d066bb6bdc426b96cb0c4dfd369947cde8a2615325eb1176ef9909e001f698",
+    "changes": [],
+    "evidence": "학습 원문 추출; 개인 Cluster의 실행 Export가 아님"
+  },
+  {
+    "file": "examples-from-notes/1pod-2con.redacted.yaml",
+    "source_url": "https://app.notion.com/p/098ddb1a63778206966701fc28c7fcfb",
+    "source_fence": 13,
+    "source_line": 623,
+    "sha256": "5d22e7b45d0283cb9d38282d018f5d12c1fb0774284069264338405156879bc9",
+    "changes": [
+      "비밀번호만 공개용 자리표시자로 치환"
+    ],
+    "evidence": "학습 원문 추출; 개인 Cluster의 실행 Export가 아님"
+  },
+  {
+    "file": "examples-from-notes/nginx-deployment.yaml",
+    "source_url": "https://app.notion.com/p/098ddb1a63778206966701fc28c7fcfb",
+    "source_fence": 14,
+    "source_line": 733,
+    "sha256": "3f229c4d7b71a2d992f03a93901f00dfcde8f1c0eec991ab37632da0436a73e0",
+    "changes": [],
+    "evidence": "학습 원문 추출; 개인 Cluster의 실행 Export가 아님"
+  },
+  {
+    "file": "examples-from-notes/node-exporter.learning.yaml",
+    "source_url": "https://app.notion.com/p/098ddb1a63778206966701fc28c7fcfb",
+    "source_fence": 15,
+    "source_line": 835,
+    "sha256": "dd4e2584ae1bb77c733f45a4668ed8ce44293b1912a9fbc3ad2caea8b7dfc3f9",
+    "changes": [],
+    "evidence": "학습 원문 추출; 개인 Cluster의 실행 Export가 아님"
+  }
+]
