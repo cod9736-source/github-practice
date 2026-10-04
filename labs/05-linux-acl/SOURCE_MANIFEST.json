@@ -1,0 +1,172 @@
+[
+  {
+    "file": "configs/01-vyos-rule-check.commands",
+    "source_page": "https://app.notion.com/p/3edddb1a637781feb0bbffdf27cc62fe",
+    "source_title": "🔐 05. Linux 계정 관리 · 권한과 ACL",
+    "section": "HQ VyOS 1.3 · 외부 SSH 주소와 DNAT 추가",
+    "code_block_index": 1,
+    "source_last_edited_at": "2026-10-02T02:22:34.366Z",
+    "source_language": "bash",
+    "transformations": [],
+    "sha256": "5a462d213b951037876917ce651cdf1538151cda916266559c6893162a991fb6",
+    "execution_status": "not_executed; recorded_procedure_only"
+  },
+  {
+    "file": "configs/02-vyos-ssh-dnat.commands",
+    "source_page": "https://app.notion.com/p/3edddb1a637781feb0bbffdf27cc62fe",
+    "source_title": "🔐 05. Linux 계정 관리 · 권한과 ACL",
+    "section": "HQ VyOS 1.3 · 외부 SSH 주소와 DNAT 추가",
+    "code_block_index": 2,
+    "source_last_edited_at": "2026-10-02T02:22:34.366Z",
+    "source_language": "bash",
+    "transformations": [],
+    "sha256": "49b327ce8d7275b3cd878f47e70590a599460313345fb27d2d5022f8f53ac554",
+    "execution_status": "not_executed; recorded_procedure_only"
+  },
+  {
+    "file": "configs/03-manage-network.commands",
+    "source_page": "https://app.notion.com/p/3edddb1a637781feb0bbffdf27cc62fe",
+    "source_title": "🔐 05. Linux 계정 관리 · 권한과 ACL",
+    "section": "Manage · nmtui로 고정 주소 적용",
+    "code_block_index": 3,
+    "source_last_edited_at": "2026-10-02T02:22:34.366Z",
+    "source_language": "bash",
+    "transformations": [],
+    "sha256": "1d8279b183b284aff195e28eb673addeefab00a1281208967a47e3ec5fb36bc0",
+    "execution_status": "not_executed; recorded_procedure_only"
+  },
+  {
+    "file": "configs/04-acl-ssh-tools.commands",
+    "source_page": "https://app.notion.com/p/3edddb1a637781feb0bbffdf27cc62fe",
+    "source_title": "🔐 05. Linux 계정 관리 · 권한과 ACL",
+    "section": "Manage · nmtui로 고정 주소 적용",
+    "code_block_index": 4,
+    "source_last_edited_at": "2026-10-02T02:22:34.366Z",
+    "source_language": "bash",
+    "transformations": [],
+    "sha256": "4628ddda5e12471896921ee978e48e149eb5a7bc6f6580036956d3ceafde357d",
+    "execution_status": "not_executed; recorded_procedure_only"
+  },
+  {
+    "file": "configs/05-groups-users.commands",
+    "source_page": "https://app.notion.com/p/3edddb1a637781feb0bbffdf27cc62fe",
+    "source_title": "🔐 05. Linux 계정 관리 · 권한과 ACL",
+    "section": "Group 4개 · User 7명 생성",
+    "code_block_index": 5,
+    "source_last_edited_at": "2026-10-02T02:22:34.366Z",
+    "source_language": "bash",
+    "transformations": [],
+    "sha256": "8f82b336f3a612a4670a7202bc4888b02b3b5832d6b36fffcad80ab7cc808c45",
+    "execution_status": "not_executed; recorded_procedure_only"
+  },
+  {
+    "file": "configs/06-initial-password.commands.example",
+    "source_page": "https://app.notion.com/p/3edddb1a637781feb0bbffdf27cc62fe",
+    "source_title": "🔐 05. Linux 계정 관리 · 권한과 ACL",
+    "section": "초기 Password 지정 · 최초 로그인 시 변경 요구",
+    "code_block_index": 6,
+    "source_last_edited_at": "2026-10-02T02:22:34.366Z",
+    "source_language": "bash",
+    "transformations": [
+      "고정 초기 비밀번호를 CHANGE_ME_INITIAL_PASSWORD로 치환; 명령 구조 유지"
+    ],
+    "sha256": "e9a68d06b7546467a929f23f9ebd66c1421c813cddf262027a79c1d668b06685",
+    "execution_status": "not_executed; recorded_procedure_only"
+  },
+  {
+    "file": "configs/07-team-workspace.commands",
+    "source_page": "https://app.notion.com/p/3edddb1a637781feb0bbffdf27cc62fe",
+    "source_title": "🔐 05. Linux 계정 관리 · 권한과 ACL",
+    "section": "팀 공용 Workspace · Setgid와 Sticky bit",
+    "code_block_index": 7,
+    "source_last_edited_at": "2026-10-02T02:22:34.366Z",
+    "source_language": "bash",
+    "transformations": [],
+    "sha256": "2e3f71180fd944b2497916f5c8d6a3bd6c53597f99b6dfd199c2f6cb0cfdd345",
+    "execution_status": "not_executed; recorded_procedure_only"
+  },
+  {
+    "file": "configs/08-private-workspace.commands",
+    "source_page": "https://app.notion.com/p/3edddb1a637781feb0bbffdf27cc62fe",
+    "source_title": "🔐 05. Linux 계정 관리 · 권한과 ACL",
+    "section": "개인 Workspace · 본인만 접근하고 새 항목에도 상속",
+    "code_block_index": 8,
+    "source_last_edited_at": "2026-10-02T02:22:34.366Z",
+    "source_language": "bash",
+    "transformations": [],
+    "sha256": "1e085db892f213ba947c63d1c5ec93d873204af390284b11c24c4727f0ce183b",
+    "execution_status": "not_executed; recorded_procedure_only"
+  },
+  {
+    "file": "configs/09-leaders-acl.commands",
+    "source_page": "https://app.notion.com/p/3edddb1a637781feb0bbffdf27cc62fe",
+    "source_title": "🔐 05. Linux 계정 관리 · 권한과 ACL",
+    "section": "leaders · 팀장 4명의 Named User ACL과 Default ACL",
+    "code_block_index": 9,
+    "source_last_edited_at": "2026-10-02T02:22:34.366Z",
+    "source_language": "bash",
+    "transformations": [],
+    "sha256": "b92f7c55218a8bbb54f43101e424f5c76b2e8de3821917405f5375ffb6504789",
+    "execution_status": "not_executed; recorded_procedure_only"
+  },
+  {
+    "file": "configs/10-services.commands",
+    "source_page": "https://app.notion.com/p/3edddb1a637781feb0bbffdf27cc62fe",
+    "source_title": "🔐 05. Linux 계정 관리 · 권한과 ACL",
+    "section": "설정 마지막 · Service 자동 실행과 일괄 적용",
+    "code_block_index": 10,
+    "source_last_edited_at": "2026-10-02T02:22:34.366Z",
+    "source_language": "bash",
+    "transformations": [],
+    "sha256": "4e4e23c07d498b530223df766f8c2e043b6ab037b43254a8db5789d8e1c53030",
+    "execution_status": "not_executed; recorded_procedure_only"
+  },
+  {
+    "file": "configs/11-dhlee-connect.ps1.example",
+    "source_page": "https://app.notion.com/p/3edddb1a637781feb0bbffdf27cc62fe",
+    "source_title": "🔐 05. Linux 계정 관리 · 권한과 ACL",
+    "section": "dhlee · 최초 Password 변경과 팀원 접근 권한",
+    "code_block_index": 11,
+    "source_last_edited_at": "2026-10-02T02:22:34.366Z",
+    "source_language": "powershell",
+    "transformations": [],
+    "sha256": "226231c78afa3190439b2872d64460e29de36da9e84d094725125b64d4cb75f8",
+    "execution_status": "not_executed; recorded_procedure_only"
+  },
+  {
+    "file": "configs/12-dhlee-test.commands",
+    "source_page": "https://app.notion.com/p/3edddb1a637781feb0bbffdf27cc62fe",
+    "source_title": "🔐 05. Linux 계정 관리 · 권한과 ACL",
+    "section": "dhlee · 최초 Password 변경과 팀원 접근 권한",
+    "code_block_index": 12,
+    "source_last_edited_at": "2026-10-02T02:22:34.366Z",
+    "source_language": "bash",
+    "transformations": [],
+    "sha256": "4997b044dd9aceb737b284747abf1fc06cc8915999a485d6468d47d2b5dad916",
+    "execution_status": "not_executed; recorded_procedure_only"
+  },
+  {
+    "file": "configs/13-jskim-connect.ps1.example",
+    "source_page": "https://app.notion.com/p/3edddb1a637781feb0bbffdf27cc62fe",
+    "source_title": "🔐 05. Linux 계정 관리 · 권한과 ACL",
+    "section": "jskim · 개인 공간 차단과 Sticky bit, 팀장 ACL 상속",
+    "code_block_index": 13,
+    "source_last_edited_at": "2026-10-02T02:22:34.366Z",
+    "source_language": "powershell",
+    "transformations": [],
+    "sha256": "bbfa2e3a91579cbbb395a83cb5ab0ac84239de0462c2d44ac9a761685115127d",
+    "execution_status": "not_executed; recorded_procedure_only"
+  },
+  {
+    "file": "configs/14-jskim-test.commands",
+    "source_page": "https://app.notion.com/p/3edddb1a637781feb0bbffdf27cc62fe",
+    "source_title": "🔐 05. Linux 계정 관리 · 권한과 ACL",
+    "section": "jskim · 개인 공간 차단과 Sticky bit, 팀장 ACL 상속",
+    "code_block_index": 14,
+    "source_last_edited_at": "2026-10-02T02:22:34.366Z",
+    "source_language": "bash",
+    "transformations": [],
+    "sha256": "5fd5464d0f57479daf59e684cfbeb551b63fc856c8057d3c05453d3f31cd6dd3",
+    "execution_status": "not_executed; recorded_procedure_only"
+  }
+]
