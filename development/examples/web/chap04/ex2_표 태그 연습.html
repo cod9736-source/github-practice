@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>테이블 연습</title>
+  </head>
+  <body>
+    <!--
+    가장 많이 사용되는 태그 중 하나 
+    <table> : 테이블을 생성할떄 사용하는 태그
+      <caption> : 테이블의 제목을 생성할 때 사용하는 태그, 테이블의 제목에 사용
+      <thead> : 테이블의 컬럼이 들어가는 부분을 만들 때 사용하는 태그, 컬럼명에 사용
+      <tbody> : 테이블의 데이터가 들어가는 부분을 만들 때 사용하는 태그, 데이터에 사용
+      <tfoot> : 테이블의 합계나 요약/정리 정보가 들어가는 부분을 만들 때 사용하는 태그, 합계나 요약에 사용
+        **thead와 tfoot는 생략 가능하나 tbody는 생략 불가능, tbody 생략시 브라우저가 자동으로 생성해줌
+    <tr> : 테이블의 행(row)을 생성할때 사용하는 태그
+    <th> : 테이블의 열(column)을 생성할때 사용하는 태그, 기본적으로 글자가 굵게 표시됨(컬럼명에 사용)
+    <td> : 테이블의 열(column)을 생성할때 사용하는 태그, 기본적으로 글자가 굵게 표시되지 않음(데이터에 사용)
+    -->
+    <h2>표 태그</h2>
+    <table border="1">
+      <caption>
+        회원 정보
+      </caption>
+      <thead>
+        <th>이름</th>
+        <th>나이</th>
+        <th>성별</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td>홍길동</td>
+          <td>30</td>
+          <td>남자</td>
+        </tr>
+        <tr>
+          <td>김영희</td>
+          <td>25</td>
+          <td>여자</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="3">총 회원 수 : 2명</td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>

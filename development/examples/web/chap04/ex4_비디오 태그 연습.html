@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>비디오 태그 연습</title>
+  </head>
+  <body>
+    <h2>비디오 기본 태그1</h2>
+    <video src="resource/video1.mp4" controls width="50%"></video>
+    <!--controls 속성은 재생, 일시정지, 볼륨조절, 전체화면 등 제어기능을 제공-->
+    <h2>비디오 기본 태그2</h2>
+    <video controls>
+      <source src="resource/video1.mp4" type="video/mp4" />
+      <source src="resource/video1.ogg" type="video/ogg" />
+      <source src="resource/video1.webm" type="video/webm" />
+      <!--브라우저마다 지원하는 비디오 포맷이 다르기 때문에 여러개의 소스를 제공-->
+      <!--비디오 태그 안에 source 태그를 넣어 여러개의 소스를 제공-->
+      <!--브라우저는 지원하는 포맷을 찾아서 재생-->
+    </video>
+
+    <h2>비디오 자동 반복 재생(+음소거)</h2>
+    <video src="resource/video1.mp4" controls autoplay loop muted></video>
+
+    <h2>비디오 썸네일(포스터)</h2>
+    <video
+      src="resource/video1.mp4"
+      controls
+      poster="images/poster.jpg"
+    ></video>
+
+    <iframe
+      width="982"
+      height="561"
+      src="https://www.youtube.com/embed/PCnNJHbdbAE"
+      title="밥 대신 애호박 이렇게 드세요… 요즘 가장 싸고 맛있습니다! 너무너무 맛있어서 식탁에 올리자마자 1분 만에 없어졌어요"
+      frameborder="0"
+      allow="
+        accelerometer;
+        autoplay;
+        clipboard-write;
+        encrypted-media;
+        gyroscope;
+        picture-in-picture;
+        web-share;
+      "
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen
+    ></iframe>
+  </body>
+</html>

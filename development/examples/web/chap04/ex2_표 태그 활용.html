@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>표 활용하기</title>
+    <style>
+      table {
+        border-collapse: collapse;
+        width: 50%;
+      }
+      th,
+      td {
+        border: 3px solid rgb(74, 205, 238);
+        padding: 10px;
+        text-align: left;
+      }
+      th {
+        background-color: #9cf1f1;
+      }
+      caption {
+        caption-side: top;
+        font-weight: bold;
+        font-size: 1.5em;
+        margin-bottom: 10px;
+      }
+      tfoot td {
+        font-weight: bold;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <caption>
+        회원 정보
+      </caption>
+      <thead>
+        <tr>
+          <th>이름</th>
+          <th>나이</th>
+          <th>성별</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>홍길동</td>
+          <td>30</td>
+          <td>남자</td>
+        </tr>
+        <tr>
+          <td>김영희</td>
+          <td>25</td>
+          <td>여자</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="3">총 회원 수 : 2명</td>
+          <!--colspan="3"는 3개의 열을 합치라는 의미-->
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>
