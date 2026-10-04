@@ -2,35 +2,26 @@
 
 **Infrastructure · Cloud · Network Engineer를 목표로 합니다.**
 
-Linux와 가상 인프라를 구성하고, 실제 출력으로 연결 상태와 장애 원인을 확인합니다. 설정 파일·실행 화면·문제 해결 기록을 함께 관리합니다.
+개발을 통해 익힌 요청·Service·DB 연결 구조를 바탕으로 인프라 구성과 문제 추적을 학습하고 있습니다. 개발 코드와 학습 기록은 GitHub, 인프라 구성과 검증 기록은 Notion에서 관리합니다.
 
-## Focus
+## Portfolio
 
-Linux Server · Routing / NAT · DNS · Container · Virtualization · Troubleshooting
-
-## Featured Labs
-
-| 실습 | 실제 확인한 범위 | 자료 |
+| 분야 | 확인할 자료 | 이동 |
 |---|---|---|
-| Domain & Server Recovery | DNS 응답·FastAPI 기동 확인, WAS 파일 누락과 DB 주소 불일치 추적 | [GitHub](https://github.com/cod9736-source/github-practice/tree/main/labs/03-domain) · [Notion](https://app.notion.com/p/3e3ddb1a637781af9665f2df397232d6) |
-| iSCSI Storage Connection | ESXi Host 2대 등록, TrueNAS Target–Extent 설정과 두 번째 Host의 Disk 연결 확인 | [GitHub](https://github.com/cod9736-source/github-practice/tree/main/labs/07-vsphere) · [Notion](https://app.notion.com/p/3efddb1a637781ebac8dfd2ad3efa622) |
-| Pod Deployment & Diagnosis | 개인 v1 Image Build·Pod 실행·삭제 확인, hostPath Mount 장애 추적 | [GitHub](https://github.com/cod9736-source/github-practice/tree/main/labs/08-kubernetes) · [Notion](https://app.notion.com/p/3efddb1a637781e081c6f06d07a75d5a) |
+| Development | 개발 프로젝트, 개인 기여, 코드와 학습 기록 | [개발 포트폴리오](https://github.com/cod9736-source/github-practice) |
+| Infrastructure | Network·Linux·가상화·Container 구성, 명령어, 실행 근거와 장애 분석 | [Notion 인프라 포트폴리오](https://app.notion.com/p/3e2ddb1a637780dcb8fdf5fb65c7328e) |
 
-단계별 실행 근거를 제시하며, 미해결 장애와 최종 기능 검증이 필요한 항목은 각 Lab에서 구분합니다.
+## Development Project · EduPOP
 
-## Tech Stack
+팀 교육 Service에서 독서 기능, EXP 연동, 캐릭터와 학생 메인 화면을 담당했습니다. 개인 기여는 실제 Commit으로 연결합니다.
 
-| 실제 구성·실행 기록 | 기술 |
-|---|---|
-| Network & Server | Linux, VyOS, NAT, DNS, Apache, FastAPI, MariaDB |
-| Container & Virtualization | Docker, Kubernetes, VMware, ESXi, vCenter, TrueNAS, iSCSI |
+- **독서:** 요청 처리·Service·Mapper·학생 화면 — [변경 근거](https://github.com/Seo-Yeon-Choi/EduPOP/commit/df1f22423f2501cb4805a7b205cc12a566e490bd)
+- **EXP:** 경험치 처리와 독서 기능 연결 — [변경 근거](https://github.com/Seo-Yeon-Choi/EduPOP/commit/f1b3a8e1012a1b158f941fb880d566f3e864c1e8)
+- **캐릭터:** 성장 단계·배경·학생 메인 화면 — [변경 근거](https://github.com/Seo-Yeon-Choi/EduPOP/commit/26ec31744d996e46e7ef31f5e30b194669789d09)
 
-## Documentation
-
-- [Notion Infrastructure Portfolio](https://app.notion.com/p/3e2ddb1a637780dcb8fdf5fb65c7328e)
-- [설정 파일·실행 근거·학습 자료](https://github.com/cod9736-source/github-practice)
-- [EduPOP 개인 기여](https://github.com/cod9736-source/github-practice#개발-경험) — 독서·EXP 기능의 실제 Commit 근거
+[개인 저장소 전체 소스](https://github.com/cod9736-source/EduPOP) · [개인 기여와 코드 경로](https://github.com/cod9736-source/github-practice/tree/main/development) · [팀 원본](https://github.com/Seo-Yeon-Choi/EduPOP)
 
 ## Current Learning
 
-Kubernetes의 Deployment·Service·Storage를 학습하고 있습니다. Image 생성, Pod 상태, Service 응답, 데이터 보존을 각각 확인하는 검증 흐름을 보완하고 있습니다.
+Kubernetes의 Deployment·Service·Storage를 학습하고 있습니다. 인프라 실습은 구성·실행·문제 해결의 확인 범위를 나누어 Notion에 기록합니다.
+
