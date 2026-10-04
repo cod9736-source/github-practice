@@ -1,6 +1,12 @@
-# vSphere 구성 학습 기록
+# LAB 07 / VIRTUALIZATION · iSCSI Storage Connection
 
-[현재 Notion 원문](https://app.notion.com/p/3e3ddb1a637781399820f7a6ad46639e)의 수업 구성값과 확인 기준이다. 실제 Host에서 Export한 설정 파일은 아니다. 2026-10-04 회수한 [개인 실행 화면](recovered-evidence.md)에서는 두 ESXi Host의 등록과 두 번째 Host의 TrueNAS iSCSI Disk 연결을 확인했다.
+vCenter에 ESXi Host 2대 등록, TrueNAS의 Target–Extent 연결, 두 번째 ESXi Host에서 iSCSI Disk 인식을 실제 화면으로 확인했습니다. vMotion·DRS의 완료 및 무중단 서비스 검증은 확인되지 않았습니다.
+
+[Notion 상세 Lab](https://app.notion.com/p/3efddb1a637781ebac8dfd2ad3efa622) · [개인 연결 근거](recovered-evidence.md)
+
+## 구성 절차와 확인 범위
+
+[Study Notes 원문](https://app.notion.com/p/3e3ddb1a637781399820f7a6ad46639e)의 수업 구성값과 확인 기준이다. 실제 Host에서 Export한 설정 파일은 아니다. 2026-10-04 회수한 [개인 실행 화면](recovered-evidence.md)에서는 두 ESXi Host의 등록과 두 번째 Host의 TrueNAS iSCSI Disk 연결을 확인했다.
 
 | 단계 | 원문 설정 | 이유 | 확인 기준 |
 | --- | --- | --- | --- |
