@@ -1,0 +1,23 @@
+apiVersion: apps/v1                 # Deployment에서 사용하는 Kubernetes API 버전
+kind: Deployment                    # 생성할 Kubernetes Resource 종류를 Deployment로 지정
+
+metadata:                           # Deployment의 Metadata 영역
+  name: nginx-deployment            # 생성할 Deployment 이름 지정
+
+spec:                               # Deployment의 원하는 상태 설정 영역
+  replicas: 3                       # 유지할 Pod 복제본 수를 3개로 지정
+  selector:                         # Deployment가 관리할 Pod 선택 조건
+    matchLabels:                    # Label을 기준으로 Pod 선택
+      app: nginx                    # app=nginx Label을 가진 Pod 선택
+
+  template:                         # 생성할 Pod의 Template 정의
+    metadata:                       # 생성되는 Pod의 Metadata 영역
+      labels:                       # 생성되는 Pod에 적용할 Label 설정
+        app: nginx                  # app=nginx Label 지정
+
+    spec:                           # Pod의 실제 실행 설정 영역
+      containers:                   # Pod 내부에서 실행할 Container 목록
+        - name: nginx               # Container 이름 지정
+          image: nginx:1.27         # 사용할 Nginx Image 지정
+          ports:                    # Container에서 사용하는 Network Port 설정
+            - containerPort: 80     # Nginx HTTP Port인 80번 Port 지정

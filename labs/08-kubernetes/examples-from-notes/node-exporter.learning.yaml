@@ -1,0 +1,24 @@
+apiVersion: apps/v1                              # DaemonSet API 버전
+kind: DaemonSet                                  # DaemonSet Resource 생성
+
+metadata:                                        # DaemonSet 기본 정보
+  name: node-exporter                            # DaemonSet 이름
+  labels:
+    app: node-exporter                           # DaemonSet Label 설정
+
+spec:                                            # DaemonSet 세부 설정
+  selector:                                      # Pod 선택 조건
+    matchLabels:
+      app: node-exporter                         # app=node-exporter Pod 관리
+
+  template:                                      # 생성할 Pod 설계 정보
+    metadata:
+      labels:
+        app: node-exporter                       # Pod Label 설정
+
+    spec:
+      containers:
+      - name: node-exporter                      # Container 이름
+        image: prom/node-exporter:latest         # Node Exporter Image
+        ports:
+        - containerPort: 9100                    # Node Exporter 서비스 Port
