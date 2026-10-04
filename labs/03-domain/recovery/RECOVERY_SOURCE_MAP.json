@@ -1,0 +1,166 @@
+{
+  "retrieved_at": "2026-10-04",
+  "source_archive": {
+    "name": "fastapi_3tier_v3(2).zip",
+    "library_file_id": "libfile_e98124ca38ac8191b87e03eb2cbc5599",
+    "uploaded_at": "2026-09-22T00:43:29.149268Z",
+    "sha256": "5e862d80e6ac3a69cc36b060bd137dfcaeca54f565c44196197d40c4c6478cf8",
+    "files": 15
+  },
+  "handoff": {
+    "name": "인프라_다음챕터_전체인계프롬프트_20260925.md",
+    "library_file_id": "libfile_9ee1baaf1fdc8191b9439f20c5faea71",
+    "created_at": "2026-09-25T11:15:47.620005Z",
+    "type": "동시기 생성 인계문; 원시 터미널 출력과 구분"
+  },
+  "changes": [
+    "database.py: DB_PASS 값을 CHANGE_ME_DB_PASSWORD로 대체",
+    "database.py: 비밀값이 포함된 DB_URL 출력문 제거, 제거 이유 주석 기록"
+  ],
+  "files": [
+    {
+      "name": "RECOVERED_SOURCES.md",
+      "size": 3900,
+      "sha256": "0238f7f7b5c015e61b36e9061443a99d581a39cff47a7660bcb78732bd4fc59a"
+    },
+    {
+      "name": "domain-app-files-missing.png",
+      "size": 20464,
+      "sha256": "ea98c4b0d50144829659374e4ded52ff26fe814ad261e2224a046df993a9d060"
+    },
+    {
+      "name": "domain-db-address-after.png",
+      "size": 10596,
+      "sha256": "b93419f6b25fba5294ed24201e1af73fb8d163a16710324bb7d7b67f2c4122f5"
+    },
+    {
+      "name": "domain-db-address-before.png",
+      "size": 63075,
+      "sha256": "ab221fa3d43f02d5c5475ef2b5ce8362e504f66944e716a403d20ee56b450786"
+    },
+    {
+      "name": "domain-dns-http-failure.png",
+      "size": 56071,
+      "sha256": "d6e7f1a8c503ec3819be66ce39be3f77e81868aa99998f12aa8035c422805f22"
+    },
+    {
+      "name": "domain-fastapi-import-error.png",
+      "size": 174643,
+      "sha256": "101668088821ee6f56c4f80984a43d752902d735289008b38f0583dc1f633046"
+    },
+    {
+      "name": "domain-fastapi-started.png",
+      "size": 166373,
+      "sha256": "f0bc87f7540cf283697f01569b96ec33c7cd88ef68595c1901e7a89e4ecd5e4d"
+    },
+    {
+      "name": "domain-gateway-neighbor.png",
+      "size": 37362,
+      "sha256": "d06723fce70e8f7043c5094b5531f16c9398ce3b657bc245fd10491f7db13ef4"
+    },
+    {
+      "name": "domain-recovery-recorded.commands",
+      "size": 1713,
+      "sha256": "bc8adf11891c50ae4fc22970fad11dd2bf2059834f96699044d9f19a4125dbf4"
+    },
+    {
+      "name": "domain-vmnet2-address-fix.png",
+      "size": 3652,
+      "sha256": "3424cb1d0e57139b40eed7d2482de2d2de37b7617b9cf5d8bb0eab46c679f04c"
+    },
+    {
+      "name": "domain-vyos-eth3-no-ipv4.png",
+      "size": 9937,
+      "sha256": "eda95b764599894ea48bab40d47373c335061a42c639649904e1da5190cd5985"
+    },
+    {
+      "name": "fastapi-3tier-training-template-sanitized.zip",
+      "size": 11321,
+      "sha256": "1afac90896a1c1e965225ea14cf39f7c3c1c3667e160738dda2f1ae9241c79fd"
+    },
+    {
+      "name": "fastapi.service.recorded",
+      "size": 299,
+      "sha256": "a47adb5e63f1096eb1b1503a59bf7c9b6cc154e0b1c6427f27cf04358dafbc5f"
+    },
+    {
+      "name": "webtest_DB.sql",
+      "size": 615,
+      "sha256": "5fe56ce09018730582d6319e5d8999eabc2779a17e6331977977b8d96a69a070"
+    }
+  ],
+  "images": [
+    {
+      "file": "domain-dns-http-failure.png",
+      "original": "image(20260925-060703).png",
+      "library_file_id": "libfile_1fe70bc1abe88191ab8618be1c3584c6",
+      "verified_pixels": true,
+      "meaning": "WAS DNS 조회 성공, HTTP 200이나 본문 fail. 최종 성공 캡처 아님.",
+      "sha256": "d6e7f1a8c503ec3819be66ce39be3f77e81868aa99998f12aa8035c422805f22"
+    },
+    {
+      "file": "domain-db-address-before.png",
+      "original": "image(20260925-061352).png",
+      "library_file_id": "libfile_0a9a5d442c2481918a51a99658d949ea",
+      "verified_pixels": true,
+      "meaning": "DB OS 주소 172.16.9.36/24와 MariaDB LISTEN 192.170.9.36:3306 불일치.",
+      "sha256": "ab221fa3d43f02d5c5475ef2b5ce8362e504f66944e716a403d20ee56b450786"
+    },
+    {
+      "file": "domain-db-address-after.png",
+      "original": "image(20260925-062330).png",
+      "library_file_id": "libfile_cfcaa41e111c8191a4d0f9eba0423c41",
+      "verified_pixels": true,
+      "meaning": "DB ens160 주소 192.170.9.36/24로 복구. 전체 DB 기능 성공까지 증명하지 않음.",
+      "sha256": "b93419f6b25fba5294ed24201e1af73fb8d163a16710324bb7d7b67f2c4122f5"
+    },
+    {
+      "file": "domain-gateway-neighbor.png",
+      "original": "image(20260925-055639).png",
+      "library_file_id": "libfile_2a7aacce811c81918449b6e8cc926eaa",
+      "verified_pixels": true,
+      "meaning": "Gateway ping 3/3, TTL128, 192.169.9.1이 MAC 00:50:56:c0:00:02로 연결. 다른 Windows 주소 증거와 함께 중복 판정.",
+      "sha256": "d06723fce70e8f7043c5094b5531f16c9398ce3b657bc245fd10491f7db13ef4"
+    },
+    {
+      "file": "domain-vmnet2-address-fix.png",
+      "original": "image(20260925-060456).png",
+      "library_file_id": "libfile_2fdc617e5b508191bfc487fc1b97a3be",
+      "verified_pixels": true,
+      "meaning": "관리자 PowerShell에서 VMnet2 주소 .99와 Gateway none 입력 기록.",
+      "sha256": "3424cb1d0e57139b40eed7d2482de2d2de37b7617b9cf5d8bb0eab46c679f04c"
+    },
+    {
+      "file": "domain-fastapi-import-error.png",
+      "original": "image(3).png",
+      "library_file_id": "libfile_cc792c5664bc81918d3e3eaf6f616f22",
+      "verified_pixels": true,
+      "meaning": "main 모듈 불러오기 실패, systemd 재시작 반복.",
+      "sha256": "101668088821ee6f56c4f80984a43d752902d735289008b38f0583dc1f633046"
+    },
+    {
+      "file": "domain-app-files-missing.png",
+      "original": "image(4).png",
+      "library_file_id": "libfile_9dddb15effec8191b5b2f3d445eb7b3b",
+      "verified_pixels": true,
+      "meaning": "/var/www/html에 database.py만 존재. main.py와 모듈 누락.",
+      "sha256": "ea98c4b0d50144829659374e4ded52ff26fe814ad261e2224a046df993a9d060"
+    },
+    {
+      "file": "domain-fastapi-started.png",
+      "original": "image(8).png",
+      "library_file_id": "libfile_9f30c265bfe48191967c24cb185be679",
+      "verified_pixels": true,
+      "meaning": "Application startup complete 및 Uvicorn 0.0.0.0:8000. DB 연결 성공 근거와 구분.",
+      "sha256": "f0bc87f7540cf283697f01569b96ec33c7cd88ef68595c1901e7a89e4ecd5e4d"
+    },
+    {
+      "file": "domain-vyos-eth3-no-ipv4.png",
+      "original": "image(20260925-062528).png",
+      "library_file_id": "libfile_10af7af29bf0819181f95a99dacc99d0",
+      "verified_pixels": true,
+      "meaning": "eth3 UP이지만 IPv4 없이 link-local IPv6만 있음. NIC 연결과 Gateway 주소 구분.",
+      "sha256": "eda95b764599894ea48bab40d47373c335061a42c639649904e1da5190cd5985"
+    }
+  ]
+}

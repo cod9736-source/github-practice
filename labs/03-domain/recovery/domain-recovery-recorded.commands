@@ -1,0 +1,36 @@
+# 2026-09-25 Domain WAS 복구 기록. 현재 장비에 일괄 실행하는 스크립트가 아님.
+# 출처: 당시 인계문 4-1, 4-2, 6-1, 6-4, 9절과 실제 터미널 화면.
+
+# [VyOS] WAS 출발지의 외부 통신을 허용하기 위해 실제 추가한 NAT 변경분
+configure
+set nat source rule 7 source address '192.169.9.0/24'
+set nat source rule 7 outbound-interface 'eth0'
+set nat source rule 7 translation address 'masquerade'
+commit
+save
+exit
+
+# [Windows 관리자 PowerShell] VyOS Gateway와 중복된 VMnet2 호스트 주소만 .99로 변경
+netsh interface ipv4 set address name="VMware Network Adapter VMnet2" source=static address=192.169.9.99 mask=255.255.255.0 gateway=none store=persistent
+
+# [WAS] 중복 주소에 대응하던 이웃 정보 제거
+sudo ip neigh flush to 192.169.9.1 dev ens160
+
+# [Windows 명령 프롬프트] 실제 WAS 주소로 과제 프로그램 전달
+scp "%USERPROFILE%\Desktop\fastapi_3tier_v3.zip" rocky@192.169.9.80:/home/rocky/was-recovery.zip
+
+# [WAS root] WEB의 정적 파일과 분리해 동적 프로그램만 복구
+unzip -o /home/rocky/was-recovery.zip 'main.py' 'model.py' 'database.py' 'board/*' 'member/*' -d /var/www/html
+
+# [WAS root] 서비스 파일 변경 반영과 부팅 자동 실행 등록
+systemctl daemon-reload
+systemctl enable --now fastapi
+
+# [WAS] 실제 화면에서 사용한 서비스 로그 확인
+journalctl -u fastapi -n 30 --no-pager
+
+# [WAS] DNS 복구 확인: 실제 출력은 192.170.9.36의 STREAM/DGRAM/RAW 세 줄
+getent ahostsv4 db.yys.ke
+
+# [WAS] HTTP 상태와 응답 본문을 함께 검사: 실제 중간 결과는 200 OK이지만 status=fail
+curl --noproxy "*" --max-time 20 -i http://127.0.0.1:8000/api/board/list
