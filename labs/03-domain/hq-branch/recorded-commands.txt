@@ -1,0 +1,39 @@
+# 본사·지사 후속 과제의 캡처에 실제 보이는 명령
+# 실행 위치가 다른 기록의 모음이며 한 번에 실행하는 스크립트가 아님.
+
+# [지사 iptables 장비] 방화벽 서비스 실행 상태 확인
+systemctl is-active iptables
+
+# [지사 iptables 장비] 실제 인터페이스 주소 확인
+ip -br a
+
+# [지사 iptables 장비] NetworkManager 프로필과 장치 연결 상태 확인
+nmcli c
+
+# [지사 iptables 장비] DNS·WEB DNAT 규칙과 도달 카운터 확인
+iptables -t nat -nvL PREROUTING
+
+# [Windows Client / PowerShell] 지사 DNS를 직접 지정하여 공개 WEB 주소 조회
+nslookup www.yys.ke 10.9.1.53
+
+# [Windows Server / PowerShell] DHCP 역할과 관리 도구 설치 상태 확인
+Install-WindowsFeature DHCP -IncludeManagementTools
+
+# [Windows Client / PowerShell] 실제 임대 주소·Gateway·DHCP Server 확인
+ipconfig /all
+
+# [WEB] 로컬 Apache의 API 프록시 경로 응답 확인
+curl -m 5 http://127.0.0.1/api/board/list
+
+# [WEB] DNS 이름을 거치지 않고 WAS 주소·포트로 직접 접속
+curl -m 5 http://172.18.9.2:8000/api/board/list
+
+# [WEB] Apache의 backend 연결 오류 확인
+tail -n 10 /var/log/httpd/error_log
+
+# [WAS] FastAPI 서비스의 기동·재시작 로그 확인
+journalctl -u fastapi -n 20 --no-pager
+
+# [MariaDB 접속 세션] 회원 데이터의 존재 여부 조회
+SELECT u_id, u_pass FROM WebTest.member;
+

@@ -1,0 +1,80 @@
+# 실제 캡처의 관찰 결과 요약
+# 현재 장비를 재실행한 결과가 아니라 2026-09-27~2026-10-01 기록.
+
+[지사 iptables 장비 — 앞선 주소 출력]
+ens33 UP 10.9.1.1/8 10.9.1.53/8 10.9.1.80/8
+ens34 UP 172.16.9.1/16
+ens35 UP 172.17.9.1/16
+systemctl is-active iptables => active
+같은 화면의 pung 명령은 오타. ping 실패나 ping 미설치로 해석하지 않음.
+
+[후속 주소·프로필 출력]
+ens33에는 외부 주소 3개 유지.
+ens34와 ens35에는 IPv4 값 미표시.
+nmcli c의 ens34/ens35 프로필 DEVICE는 --.
+앞선 주소 출력으로 이후 설정 유지까지 확정하지 않음.
+
+[지사 PREROUTING]
+UDP 10.9.1.53:53 -> 172.16.9.53:53 : 47 packets / 3386 bytes
+TCP 10.9.1.53:53 -> 172.16.9.53:53 : 0 packets
+TCP 10.9.1.80:80 -> 172.17.9.80:80 : 0 packets
+카운터는 캡처 시점의 값이며 전체 NAT·방화벽 정책 출력은 아님.
+
+[DNS]
+zone yys.ke/IN: loaded serial 2026092202
+nslookup www.yys.ke 10.9.1.53 => www.yys.ke / 10.9.1.80
+앞선 질의 timeout도 존재. 정확한 수정 명령·최종 전체 zone·전송 과정은 미확보.
+
+[본사 DHCP]
+Install-WindowsFeature => Success True / Restart Needed No / Exit Code NoChangeNeeded
+Client IPv4 192.168.70.130 / 255.255.255.0
+Gateway 192.168.70.2
+DHCP Server 192.168.70.254
+DNS Server 192.168.70.2
+과제의 본사 Client 192.169.9.* 범위와 다름. 원인이 된 NIC·Scope 변경은 미확정.
+
+[외부 Client]
+IPv4 10.128.1.235 / 255.0.0.0
+Gateway 10.0.0.1
+
+[WEB 주소]
+ens160 UP 172.17.9.80/16
+ens192 UP 172.18.9.1/16
+
+[연속된 후속 네트워크 캡처]
+ens160 UP 172.18.9.2/16 172.18.9.1/16
+ens192 UP (IPv4 미표시)
+앞선 WEB 화면의 .1과 겹치는 값은 장비별 설정을 대조할 단서.
+이 사실만으로 최종 장애 원인 또는 해결을 확정하지 않음.
+
+[후속 firewalld 출력]
+public(active), interfaces ens160 lo
+services cockpit dhcpv6-client ssh
+rich rule: source192.168.9.80/32, TCP8000 accept
+rich rule: source172.18.9.1, TCP8000 accept
+두 출발지 허용 규칙의 공존 확인. 전체 정책의 독점 허용을 의미하지 않음.
+
+[WEB -> WAS]
+127.0.0.1:80 초기 요청 => 연결이 거부됨
+같은 로컬 /api/board/list 후속 요청 => 503 Service Unavailable
+172.18.9.2:8000 직접 요청 => 호스트로 갈 루트가 없음
+Apache => (113)No route to host / AH00957 / AH01114 backend172.18.9.2
+해결 명령과 최종 기능 성공은 미확보.
+
+[FastAPI]
+Started WebTest FastAPI.
+Application startup complete.
+Uvicorn running on http://0.0.0.0:8000
+중지 후 PID2730으로 재시작 기록.
+기동 기록은 WEB 도달이나 DB 인증 성공을 대신하지 않음.
+
+[DB 직접 조회]
+SELECT u_id, u_pass FROM WebTest.member;
+Empty set (두 차례)
+조회 세션이 실행되고 결과 행이 없었던 상태.
+
+[DB 애플리케이션 인증]
+(1045, "Access denied for user 'yongsu'@'_gateway' (using password: YES)")
+_gateway를 특정 IP로 바꾸어 적지 않음.
+계정 Host 조건·비밀번호 등 최종 원인과 복구 결과는 미확보.
+
