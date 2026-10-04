@@ -30,15 +30,15 @@ VMware 가상망과 Linux 환경의 설정 기록을 장비별로 분리했습�
 | 실습 | 수록 자료 | 확인 범위 |
 |---|---|---|
 | [01 · Packet Tracer](https://github.com/cod9736-source/github-practice/tree/main/labs/01-packet-tracer) | 8개 장비의 설정 222개와 출처 | 노트 전사. 실제 Routing·VLAN·ping 출력은 미첨부 |
-| [02 · Web·DB](https://github.com/cod9736-source/github-practice/tree/main/labs/02-three-tier) | NAT·Apache·MariaDB 설정과 실행 절차 | 설정 원문 확보. HTTP·DB 저장·재부팅 결과는 미확보 |
-| [03 · Domain](https://github.com/cod9736-source/github-practice/tree/main/labs/03-domain) | DNS·계층 분리 설정과 오류 복구 기록 | 원문에 로그인·목록·작성 후 재조회 성공 서술. 대응하는 원시 출력은 미첨부 |
-| [04 · VPN](https://github.com/cod9736-source/github-practice/tree/main/labs/04-vpn) | Sophos UTM Site-to-Site IPsec 주소·GUI 설정 절차 | 실제 터널 상태·협상 로그·양방향 ping은 미첨부 |
+| [02 · Web·DB](https://github.com/cod9736-source/github-practice/tree/main/labs/02-three-tier) | NAT·Apache·MariaDB 설정, 회수한 과제 프로그램과 SQL | 초기 실습의 HTTP·DB 저장·재부팅 결과는 미확보. 후속 Domain 화면과 구분 |
+| [03 · Domain](https://github.com/cod9736-source/github-practice/tree/main/labs/03-domain) | DNS·계층 분리 설정, 서비스 파일 기록, 복구 화면, 본사·지사 후속 기록 | DNS 응답·서비스 기동·DB 주소 복구의 실제 화면 확보. 최종 로그인·저장·재조회 성공은 원문 서술 |
+| [04 · VPN](https://github.com/cod9736-source/github-practice/tree/main/labs/04-vpn) | Sophos UTM 주소·GUI 절차, Remote Gateway 생성 화면, 장애 보고 | 저장 전 입력 화면 확인. 실제 터널 상태·협상 로그·양방향 ping은 미첨부 |
 | [05 · Linux ACL](https://github.com/cod9736-source/github-practice/tree/main/labs/05-linux-acl) | 사용자·그룹·공용·개인·팀장 공간의 권한 정책 | 과제 절차. 실제 허용·거부 및 SSH 검증은 미확인 |
-| [06 · Docker](https://github.com/cod9736-source/github-practice/tree/main/labs/06-containers) | Bridge Network·Container·PostgreSQL 명령 | 학습 예제와 재실습 보완 명령. 실행·영구 저장 증빙과 구분 |
-| [07 · vSphere](https://github.com/cod9736-source/github-practice/tree/main/labs/07-vsphere) | ESXi·vCenter·공유 Storage·vMotion·DRS 수업 절차 | 개인 Host Export·작업 이력은 미확보 |
-| [08 · Kubernetes](https://github.com/cod9736-source/github-practice/tree/main/labs/08-kubernetes) | Pod·Deployment·DaemonSet Manifest 4개 | 학습 예제. 개인 Cluster 실행 결과와 대조 전 |
+| [06 · Docker](https://github.com/cod9736-source/github-practice/tree/main/labs/06-containers) | Bridge·PostgreSQL 명령과 회수한 실행·오류 기록 | 패키지 설치와 hello-world 정상 종료 확인. Bridge 통신·DB 조회·영구 저장은 미확인 |
+| [07 · vSphere](https://github.com/cod9736-source/github-practice/tree/main/labs/07-vsphere) | 수업 절차와 개인 Host·TrueNAS 연결 화면 | 두 ESXi Host 등록, 두 번째 Host의 iSCSI Disk 연결 확인. vMotion·DRS 완료는 미확인 |
+| [08 · Kubernetes](https://github.com/cod9736-source/github-practice/tree/main/labs/08-kubernetes) | Manifest 9개·Dockerfile 원문과 개인 실행·장애 기록 | Pod 실행·삭제와 개인 v1 Build 확인. Push 권한·hostPath 장애의 최종 해결 및 Service HTTP 응답은 미확인 |
 
-설정 원문, 재실습 보완, 실제 결과는 각 폴더에서 구분합니다. 정상 출력 예시를 실행 결과로 표시하지 않았으며, 이번 문서 정리에서 장비를 다시 실행하지 않았습니다.
+설정 원문, 재실습 보완, 실제 결과는 각 폴더에서 구분합니다. 2026년 10월 4일 과거 첨부 파일과 당시 인계문을 추가 회수했으며, 각 출처에 원본 날짜와 확인 범위를 남겼습니다. 정상 출력 예시를 실행 결과로 표시하지 않았으며, 이번 문서 정리에서 장비를 다시 실행하지 않았습니다.
 
 ## Verification & Troubleshooting
 
@@ -47,7 +47,7 @@ VMware 가상망과 Linux 환경의 설정 기록을 장비별로 분리했습�
 3. **Service:** 프로세스 상태, 설정 문법, Listen 주소·Port 확인.
 4. **접근·기능:** 방화벽·계정 권한 확인 후 HTTP 응답과 DB 저장·재조회를 분리해 확인.
 
-Domain 확장 기록에서는 DB의 실제 주소와 App 설정 불일치, VyOS eth3 주소 누락, DB 인증 거부, Host 가상 어댑터와 Gateway 주소 충돌을 다룹니다. [문제·확인·조치·검증의 연결](https://github.com/cod9736-source/github-practice/tree/main/labs/03-domain)을 읽을 수 있으며, 성공 여부는 원문 서술과 원시 출력 확보 여부를 구분했습니다.
+Domain 확장 기록에서는 DB의 실제 주소와 App 설정 불일치, VyOS eth3 주소 누락, DB 인증 거부, Host 가상 어댑터와 Gateway 주소 충돌, WAS 프로그램 파일 누락을 다룹니다. [문제·확인·조치·검증의 연결](https://github.com/cod9736-source/github-practice/tree/main/labs/03-domain)을 실제 중간 출력과 대조할 수 있습니다. DNS 응답·서비스 기동과 최종 사용자 기능 성공을 구분했으며, 9월 25일 성공 서술을 후속 본사·지사 환경의 성공으로 옮기지 않았습니다.
 
 ## 학습한 점
 
