@@ -1,6 +1,6 @@
 # vSphere 구성 학습 기록
 
-[현재 Notion 원문](https://app.notion.com/p/3e3ddb1a637781399820f7a6ad46639e)의 수업 구성값과 확인 기준이다. 실제 Host에서 Export한 설정 파일이 아니다.
+[현재 Notion 원문](https://app.notion.com/p/3e3ddb1a637781399820f7a6ad46639e)의 수업 구성값과 확인 기준이다. 실제 Host에서 Export한 설정 파일은 아니다. 2026-10-04 회수한 [개인 실행 화면](recovered-evidence.md)에서는 두 ESXi Host의 등록과 두 번째 Host의 TrueNAS iSCSI Disk 연결을 확인했다.
 
 | 단계 | 원문 설정 | 이유 | 확인 기준 |
 | --- | --- | --- | --- |
