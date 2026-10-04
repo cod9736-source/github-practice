@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>선택자 우선순위</title>
+    <style>
+      /* 전체 선택자(4순위) */
+      * {
+        color: red;
+      }
+
+      /* 태그 선택자(3순위) */
+      p {
+        color: orange;
+      }
+
+      /* 클래스 선택자(2순위) */
+      .text {
+        color: green;
+      }
+      /* 아래 있는 코드로 스타일이 덮어 씌워짐 */
+      .text {
+        color: purple;
+      }
+
+      /* id 선택자(1순위) */
+      #main {
+        color: rgb(0, 217, 255);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 인라인 스타일이 내부 스타일보다 우선순위가 높다!-->
+    <p id="main" class="text" style="color: brown">어떤색으로 보일까요?</p>
+  </body>
+</html>

@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>스타일 상속</title>
+    <style>
+      body {
+        /* body에 적용된 스타일은 상속되어 모든 태그에 적용됨*/
+        color: navy;
+      }
+
+      div {
+        /* 테두리는 상속되지 않는다 */
+        border: 2px solid orangered;
+        /* div에 적용된 스타일은 상속되어 div안의 모든 태그에 적용됨*/
+        color: green;
+      }
+
+      p {
+        /* p에 직접 스타일 적용시 상속 스타일은 무시됨*/
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>스타일 상속 실습</h1>
+    <p>아래 div 있음</p>
+    <div>
+      <h2>div 안의 제목</h2>
+      <p>div 안의 문단</p>
+    </div>
+  </body>
+</html>

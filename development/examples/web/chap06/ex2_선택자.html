@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>선택자 실습</title>
+    <style>
+      /*태그(타입) 선택자*/
+      h1 {
+        color: aqua;
+        background-color: tomato;
+      }
+
+      p {
+        color: chartreuse;
+        font-size: 25px;
+      }
+
+      /*id 선택자*/
+      #title {
+        font-style: italic;
+      }
+
+      /*클래스 선택자*/
+      .deco {
+        text-decoration: underline;
+        color: deeppink;
+      }
+
+      /*자손 선택자, 후손 선택자인 div p를 사용해도 동일한 결과*/
+      div > p {
+        color: purple;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>선택자 실습</h1>
+    <p>이 문단은 일반 텍스트를 포함하고 있습니다.</p>
+    <p>
+      이 문단은 <strong class="deco"> 강조</strong>된 텍스트를 포함하고
+      있습니다.
+    </p>
+    <p>이 문단은 <em class="deco">기울임</em>된 텍스트를 포함하고 있습니다.</p>
+    <p>이 문단은 <u>밑줄</u>된 텍스트를 포함하고 있습니다.</p>
+    <p>
+      이 문단은 <span style="color: red">빨간색</span> 텍스트를 포함하고
+      있습니다.
+    </p>
+
+    <h1 id="title">또 다른 제목</h1>
+    <p>이 문단은 또 다른 제목 아래에 있는 일반 텍스트입니다.</p>
+    <p>이 문단은 일반 텍스트를 <span class="deco">포함</span>하고 있습니다.</p>
+    <div>
+      <p>이 문단은 div 안에 있는 일반 텍스트입니다.</p>
+      <p>이 문단은 div 안에 있는 <strong>강조</strong>된 텍스트입니다.</p>
+    </div>
+    <p>이 문단은 <strong> 강조</strong>된 텍스트를 포함하고 있습니다.</p>
+  </body>
+</html>
