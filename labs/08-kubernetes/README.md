@@ -1,6 +1,6 @@
 # Kubernetes 학습 설정과 검증 기준
 
-[원문](https://app.notion.com/p/098ddb1a63778206966701fc28c7fcfb)의 실제 코드 블록에서 Manifest 4개를 추출했다. 운영 Cluster에서 Export한 파일이나 개인 실행 성공 증거로 표시하지 않는다. 이미지·복제본·Label은 원문대로 유지했으며 다중 Container 예시의 비밀번호만 치환했다.
+[원문](https://app.notion.com/p/098ddb1a63778206966701fc28c7fcfb)의 실제 코드 블록에서 Manifest 4개를 추출했다. 아래 4개는 운영 Cluster에서 Export한 파일이나 개인 실행 성공 증거로 표시하지 않는다. 2026-10-04 추가 회수한 [개인 실행 증거](recovered-evidence.md)에는 nginx Pod 실행·삭제, 개인 v1 Image Build와 Pod 실행, hostPath 장애 기록이 있다. 이미지·복제본·Label은 원문대로 유지했으며 다중 Container 예시의 비밀번호만 치환했다.
 
 | 파일 | 목적 | 확인할 결과 | 현재 근거의 한계 |
 | --- | --- | --- | --- |
@@ -17,7 +17,7 @@
 4. Deployment는 `kubectl get deployment,replicaset,pods`로 각 계층을 함께 확인한다.
 5. 변경 전후 출력과 실행 시각을 남겨 선언한 설정이 적용되었는지 비교한다.
 
-위 명령은 확인 절차이며 실행 결과를 생성해 넣지 않았다. 선택 Namespace가 있다면 모든 조회·변경 명령에서 동일하게 지정해야 한다. 현재 원문 Manifest에는 Namespace가 없어 특정 개인 Namespace를 임의로 넣지 않았다.
+위 명령은 확인 절차이며 실행 결과를 생성해 넣지 않았다. 선택 Namespace가 있다면 모든 조회·변경 명령에서 동일하게 지정해야 한다. 위 기존 수업 Manifest 4개에는 Namespace가 없어 특정 개인 Namespace를 임의로 넣지 않았다.
 
 ## Troubleshooting 검토
 
@@ -26,3 +26,7 @@
 - **DaemonSet**: Pod 실행과 Host Metric 수집은 서로 다른 확인 항목이다. 원문에는 Host 접근·수집 검증이 없다.
 
 공식 근거: [Cluster 진단](https://kubernetes.io/docs/tasks/debug/debug-cluster/), [containerd의 Image Import](https://github.com/containerd/containerd/blob/main/docs/cri/crictl.md), [node_exporter](https://github.com/prometheus/node_exporter).
+
+## 추가 회수 자료
+
+[recovery-20261004](recovery-20261004/)에 Dockerfile, Docker 연계 수업 Manifest 2개, 다음 Git 연계 과제 Manifest 3개를 출처와 함께 보존했다. 수업 원문과 실제 출력의 확인 범위는 [회수 기록](recovered-evidence.md)에 구분했다. 완전한 웹 소스와 최종 Cluster Export가 없어 한 번에 재현되는 완성 프로젝트로 표시하지 않는다.
