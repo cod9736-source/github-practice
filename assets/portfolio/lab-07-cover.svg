@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2400" height="600" viewBox="0 0 2400 600" role="img" aria-labelledby="title desc">
+<title id="title">Lab 07 — iSCSI Storage Connection</title>
+<desc id="desc">VIRTUALIZATION. ESXi · vCenter · TrueNAS · iSCSI. Text grouped in the central safe area for a Notion page cover.</desc>
+<rect width="2400" height="600" fill="#F7F8FA"/>
+<path d="M360 182H2040" stroke="#E5E7EB" stroke-width="2"/>
+<rect x="360" y="226" width="5" height="24" fill="#7C3AED"/>
+<text x="386" y="247" fill="#6B7280" font-family="DejaVu Sans, sans-serif" font-size="21" font-weight="700" letter-spacing="1.8">LAB 07  /  VIRTUALIZATION</text>
+<text x="360" y="333" fill="#111827" font-family="DejaVu Sans, sans-serif" font-size="58" font-weight="700" letter-spacing="-1.0">iSCSI Storage Connection</text>
+<text x="362" y="391" fill="#6B7280" font-family="DejaVu Sans, sans-serif" font-size="25" font-weight="400" letter-spacing="0">ESXi · vCenter · TrueNAS · iSCSI</text>
+</svg>

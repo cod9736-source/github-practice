@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2400" height="600" viewBox="0 0 2400 600" role="img" aria-labelledby="title desc">
+<title id="title">Infrastructure / Cloud / Network</title>
+<desc id="desc">yongsoo — Infrastructure Portfolio. Design, build, verify, and troubleshoot.</desc>
+<rect width="2400" height="600" fill="#F7F8FA"/>
+<path d="M360 182H2040" stroke="#E5E7EB" stroke-width="2"/>
+<rect x="360" y="226" width="5" height="24" fill="#2563EB"/>
+<text x="386" y="247" fill="#6B7280" font-family="DejaVu Sans, sans-serif" font-size="23" font-weight="400" letter-spacing="0">yongsoo · Infrastructure Portfolio</text>
+<text x="360" y="333" fill="#111827" font-family="DejaVu Sans, sans-serif" font-size="59" font-weight="700" letter-spacing="-1.2">Infrastructure / Cloud / Network</text>
+<text x="362" y="391" fill="#6B7280" font-family="DejaVu Sans, sans-serif" font-size="22" font-weight="400" letter-spacing="1.0">DESIGN → BUILD → VERIFY → TROUBLESHOOT</text>
+</svg>

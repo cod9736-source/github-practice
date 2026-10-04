@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+<title id="title">Lab 06 — Container Execution</title>
+<desc id="desc">CONTAINERS. Docker · Image · Container. Infrastructure lab series thumbnail.</desc>
+<rect width="1600" height="1000" fill="#F7F8FA"/>
+<rect x="64" y="64" width="1472" height="872" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="2"/>
+<rect x="120" y="116" width="6" height="28" fill="#2563EB"/>
+<text x="148" y="140" fill="#111827" font-family="DejaVu Sans, sans-serif" font-size="25" font-weight="700" letter-spacing="2.4">LAB 06</text>
+<text x="120" y="240" fill="#2563EB" font-family="DejaVu Sans, sans-serif" font-size="25" font-weight="700" letter-spacing="2.2">CONTAINERS</text>
+<text x="120" y="425" fill="#111827" font-family="DejaVu Sans, sans-serif" font-size="78" font-weight="700" letter-spacing="-1.6">Container</text>
+<text x="120" y="521" fill="#111827" font-family="DejaVu Sans, sans-serif" font-size="78" font-weight="700" letter-spacing="-1.6">Execution</text>
+<text x="122" y="625" fill="#6B7280" font-family="DejaVu Sans, sans-serif" font-size="30" font-weight="400" letter-spacing="0">Docker · Image · Container</text>
+<path d="M120 813H1480" stroke="#E5E7EB" stroke-width="2"/>
+<text x="120" y="869" fill="#6B7280" font-family="DejaVu Sans, sans-serif" font-size="23" font-weight="400" letter-spacing="1.2">DESIGN → BUILD → VERIFY → TROUBLESHOOT</text>
+</svg>
