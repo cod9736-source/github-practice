@@ -1,0 +1,334 @@
+{
+  "snapshot_date": "2026-10-04",
+  "source_documents": [
+    {
+      "file": "python.md",
+      "title": "Python",
+      "source_url": "https://app.notion.com/p/36cddb1a637780758fd2f1a040247136",
+      "source_line_start": 7174,
+      "source_line_end": 9054,
+      "source_sha256": "7dc5b8f76b1737062a710bce27c4d775c325a7399b75654fc3d7f319d5e456f8",
+      "source_lines": 1881,
+      "code_blocks": 27,
+      "image_references": 227,
+      "attachment_references": 0,
+      "details": 74
+    },
+    {
+      "file": "java.md",
+      "title": "Java",
+      "source_url": "https://app.notion.com/p/36cddb1a637780758fd2f1a040247136",
+      "source_line_start": 9055,
+      "source_line_end": 9837,
+      "source_sha256": "cff5883206aff7c02624763a2a3bfc600e9558adb415ff2408119d5ca9890552",
+      "source_lines": 783,
+      "code_blocks": 1,
+      "image_references": 297,
+      "attachment_references": 5,
+      "details": 128
+    },
+    {
+      "file": "html.md",
+      "title": "HTML",
+      "source_url": "https://app.notion.com/p/36cddb1a637780758fd2f1a040247136",
+      "source_line_start": 9838,
+      "source_line_end": 9971,
+      "source_sha256": "4d3714a1339d249e3f8599d21cead10efad12e04b51ca4e6a96709bbb1acaec5",
+      "source_lines": 134,
+      "code_blocks": 0,
+      "image_references": 74,
+      "attachment_references": 1,
+      "details": 15
+    },
+    {
+      "file": "javascript.md",
+      "title": "JavaScript",
+      "source_url": "https://app.notion.com/p/36cddb1a637780758fd2f1a040247136",
+      "source_line_start": 9972,
+      "source_line_end": 10036,
+      "source_sha256": "db3de1418317ef1b4bf26a7765b32d1d035b6915be5f2bf35356b6a53f5a4388",
+      "source_lines": 65,
+      "code_blocks": 0,
+      "image_references": 41,
+      "attachment_references": 0,
+      "details": 7
+    },
+    {
+      "file": "servlet.md",
+      "title": "Servlet",
+      "source_url": "https://app.notion.com/p/36cddb1a637780758fd2f1a040247136",
+      "source_line_start": 10037,
+      "source_line_end": 10047,
+      "source_sha256": "45a72cf04279ef1879ddca84be25eb17490f68f28b578a6c49243e028f835426",
+      "source_lines": 11,
+      "code_blocks": 0,
+      "image_references": 10,
+      "attachment_references": 0,
+      "details": 0
+    },
+    {
+      "file": "servlet-to.md",
+      "title": "Servlet TO",
+      "source_url": "https://app.notion.com/p/36cddb1a637780758fd2f1a040247136",
+      "source_line_start": 10048,
+      "source_line_end": 10568,
+      "source_sha256": "565e9ca6d082539bf015d2b8736604a85a6d6eef06e26fcbb30cf3358b2e69c5",
+      "source_lines": 521,
+      "code_blocks": 3,
+      "image_references": 8,
+      "attachment_references": 0,
+      "details": 1
+    },
+    {
+      "file": "git.md",
+      "title": "Git",
+      "source_url": "https://app.notion.com/p/36cddb1a637780758fd2f1a040247136",
+      "source_line_start": 10569,
+      "source_line_end": 10575,
+      "source_sha256": "03fd297aec65fd1cc04036f010f4ae5ae30a14c8dc203cbcb80a0290de5839d5",
+      "source_lines": 7,
+      "code_blocks": 0,
+      "image_references": 6,
+      "attachment_references": 0,
+      "details": 0
+    },
+    {
+      "file": "servlet-database.md",
+      "title": "Servlet Database",
+      "source_url": "https://app.notion.com/p/36cddb1a637780758fd2f1a040247136",
+      "source_line_start": 10576,
+      "source_line_end": 10645,
+      "source_sha256": "f561d01ba0a4d0e95c1573d401534585c740a3c72836db7fc81c4e7d175e0a88",
+      "source_lines": 70,
+      "code_blocks": 0,
+      "image_references": 44,
+      "attachment_references": 0,
+      "details": 8
+    },
+    {
+      "file": "spring-boot.md",
+      "title": "Spring Boot",
+      "source_url": "https://app.notion.com/p/36cddb1a637780758fd2f1a040247136",
+      "source_line_start": 10646,
+      "source_line_end": 10667,
+      "source_sha256": "e20cc789ab2ad27aaddec3545b7c09b1c48819fbf60aab2f3112d6270c66ecda",
+      "source_lines": 22,
+      "code_blocks": 0,
+      "image_references": 14,
+      "attachment_references": 0,
+      "details": 0
+    },
+    {
+      "file": "intellij.md",
+      "title": "IntelliJ",
+      "source_url": "https://app.notion.com/p/36cddb1a637780758fd2f1a040247136",
+      "source_line_start": 10668,
+      "source_line_end": 10706,
+      "source_sha256": "5011c58d5613ff399565d175caacb0cb4c70418e4d9309f56007e93dbac9f595",
+      "source_lines": 39,
+      "code_blocks": 0,
+      "image_references": 32,
+      "attachment_references": 0,
+      "details": 0
+    },
+    {
+      "file": "react.md",
+      "title": "React",
+      "source_url": "https://app.notion.com/p/36cddb1a637780758fd2f1a040247136",
+      "source_line_start": 10707,
+      "source_line_end": 10753,
+      "source_sha256": "a11bbd1f78b72d893e40b354ecc853a75794c1e77579297971c973ab1f0b722d",
+      "source_lines": 47,
+      "code_blocks": 0,
+      "image_references": 34,
+      "attachment_references": 0,
+      "details": 4
+    },
+    {
+      "file": "react-to.md",
+      "title": "React TO",
+      "source_url": "https://app.notion.com/p/36cddb1a637780758fd2f1a040247136",
+      "source_line_start": 10754,
+      "source_line_end": 10759,
+      "source_sha256": "a4ddaf7827aec3b4f33b737341edaec710677482a1a53b6f4da6d269f10a01c8",
+      "source_lines": 6,
+      "code_blocks": 0,
+      "image_references": 3,
+      "attachment_references": 0,
+      "details": 0
+    },
+    {
+      "file": "database-concepts.md",
+      "title": "Database Concepts",
+      "source_url": "https://app.notion.com/p/36cddb1a637780758fd2f1a040247136",
+      "source_line_start": 1941,
+      "source_line_end": 2022,
+      "source_sha256": "297f89acd826488c50d811997d7e080f19f6db3095a90bbbf335debafe5f9221",
+      "source_lines": 82,
+      "code_blocks": 2,
+      "image_references": 7,
+      "attachment_references": 0,
+      "details": 9
+    },
+    {
+      "file": "database-sql.md",
+      "title": "Database SQL",
+      "source_url": "https://app.notion.com/p/36cddb1a637780758fd2f1a040247136",
+      "source_line_start": 2132,
+      "source_line_end": 4294,
+      "source_sha256": "3ed9b6fa6913a8bd4ab13f5140f318a27027a04c9f3e1b0114aba10ef23a1648",
+      "source_lines": 2163,
+      "code_blocks": 93,
+      "image_references": 102,
+      "attachment_references": 0,
+      "details": 146
+    },
+    {
+      "file": "sql-references.md",
+      "title": "SQL References",
+      "source_url": "https://app.notion.com/p/36cddb1a637780758fd2f1a040247136",
+      "source_line_start": 1937,
+      "source_line_end": 1939,
+      "source_sha256": "34987942c2e7eb534518175dd991e8d2d18cc3a3bb66fd118e408b165b2ce404",
+      "source_lines": 3,
+      "code_blocks": 0,
+      "image_references": 0,
+      "attachment_references": 3,
+      "details": 0
+    },
+    {
+      "file": "python-review.md",
+      "title": "review",
+      "source_url": "https://app.notion.com/p/36cddb1a637780f6aa23d0dd712a1710",
+      "source_sha256": "31f3611b2e5d41fb2344f282c90dfe27c4562153a32eb62404411ac39024f997",
+      "source_lines": 33,
+      "code_blocks": 0,
+      "image_references": 0,
+      "attachment_references": 0,
+      "details": 0
+    },
+    {
+      "file": "cs104-python.md",
+      "title": "cs104",
+      "source_url": "https://app.notion.com/p/010ddb1a6377833988a1815026625b5e",
+      "source_sha256": "81dfcaccc62b722ad203e4fe835f0bdc07181e262aeb6c66d88b21afd251e275",
+      "source_lines": 41,
+      "code_blocks": 4,
+      "image_references": 0,
+      "attachment_references": 0,
+      "details": 0
+    }
+  ],
+  "unresolved_source_blocks": [
+    {
+      "file": "python.md",
+      "kind": "bookmark",
+      "title": "진법변환 10진수에서 2진수로",
+      "source_url": "https://app.notion.com/p/36cddb1a637780758fd2f1a040247136#36dddb1a63778050974fdebc570f9cdc",
+      "status": "title verified; original Notion bookmark preserved; external destination not exposed by connector"
+    },
+    {
+      "file": "python.md",
+      "kind": "bookmark",
+      "title": "2진수를 10진수로 변환하는 방법",
+      "source_url": "https://app.notion.com/p/36cddb1a637780758fd2f1a040247136#36dddb1a6377809e8728ed81a093e7f8",
+      "status": "title verified; original Notion bookmark preserved; external destination not exposed by connector"
+    },
+    {
+      "file": "python.md",
+      "kind": "bookmark",
+      "title": "2진수로 빠르게 바꾸는 법",
+      "source_url": "https://app.notion.com/p/36cddb1a637780758fd2f1a040247136#36dddb1a6377802e86bcc40495c706c1",
+      "status": "title verified; original Notion bookmark preserved; external destination not exposed by connector"
+    },
+    {
+      "file": "python.md",
+      "kind": "bookmark",
+      "title": "16진수를 10진수로 변환",
+      "source_url": "https://app.notion.com/p/36cddb1a637780758fd2f1a040247136#36dddb1a63778058bd49f01befc633ef",
+      "status": "title verified; original Notion bookmark preserved; external destination not exposed by connector"
+    },
+    {
+      "file": "intellij.md",
+      "kind": "bookmark",
+      "title": "IntelliJ IDEA | Other Versions",
+      "source_url": "https://app.notion.com/p/36cddb1a637780758fd2f1a040247136#3beddb1a63778065bfbacf19d23c40f8",
+      "status": "title verified; original Notion bookmark preserved; external destination not exposed by connector"
+    },
+    {
+      "file": "intellij.md",
+      "kind": "bookmark",
+      "title": "Java Archive Downloads - Java SE 17.0.12 and earlier",
+      "source_url": "https://app.notion.com/p/36cddb1a637780758fd2f1a040247136#3beddb1a6377800da037c12faa25fb8a",
+      "status": "title verified; original Notion bookmark preserved; external destination not exposed by connector"
+    },
+    {
+      "file": "intellij.md",
+      "kind": "bookmark",
+      "title": "start.spring.io",
+      "source_url": "https://app.notion.com/p/36cddb1a637780758fd2f1a040247136#3bfddb1a6377809f8a25f2953c0ed8f9",
+      "status": "title verified; original Notion bookmark preserved; external destination not exposed by connector"
+    },
+    {
+      "file": "database-concepts.md",
+      "kind": "bookmark",
+      "title": "데이터베이스 관리 시스템",
+      "source_url": "https://app.notion.com/p/36cddb1a637780758fd2f1a040247136#37cddb1a637780edbc9ad23c3632c4e5",
+      "status": "title verified; original Notion bookmark preserved; external destination not exposed by connector"
+    },
+    {
+      "file": "database-sql.md",
+      "kind": "bookmark",
+      "title": "SQL",
+      "source_url": "https://app.notion.com/p/36cddb1a637780758fd2f1a040247136#37dddb1a637780268eded39272e3bec2",
+      "status": "title verified; original Notion bookmark preserved; external destination not exposed by connector"
+    },
+    {
+      "file": "database-sql.md",
+      "kind": "bookmark",
+      "title": "데이터 정의 언어",
+      "source_url": "https://app.notion.com/p/36cddb1a637780758fd2f1a040247136#37dddb1a6377803eb3f5d85bac788c0c",
+      "status": "title verified; original Notion bookmark preserved; external destination not exposed by connector"
+    },
+    {
+      "file": "database-sql.md",
+      "kind": "bookmark",
+      "title": "데이터 조작 언어",
+      "source_url": "https://app.notion.com/p/36cddb1a637780758fd2f1a040247136#37dddb1a63778086bf44ce8968fac2ec",
+      "status": "title verified; original Notion bookmark preserved; external destination not exposed by connector"
+    },
+    {
+      "file": "database-sql.md",
+      "kind": "bookmark",
+      "title": "MySQL :: Other MySQL Documentation",
+      "source_url": "https://app.notion.com/p/36cddb1a637780758fd2f1a040247136#37dddb1a637780849298c992df4cd500",
+      "status": "title verified; original Notion bookmark preserved; external destination not exposed by connector"
+    },
+    {
+      "file": "database-sql.md",
+      "kind": "bookmark",
+      "title": "데이터 제어 언어",
+      "source_url": "https://app.notion.com/p/36cddb1a637780758fd2f1a040247136#382ddb1a63778079b489e69e4ca38a41",
+      "status": "title verified; original Notion bookmark preserved; external destination not exposed by connector"
+    },
+    {
+      "file": "database-sql.md",
+      "kind": "bookmark",
+      "title": "VIEW (SQL)",
+      "source_url": "https://app.notion.com/p/36cddb1a637780758fd2f1a040247136#38addb1a63778015ac88d9cc4fd24894",
+      "status": "title verified; original Notion bookmark preserved; external destination not exposed by connector"
+    }
+  ],
+  "redactions": [
+    {
+      "file": "servlet-to.md",
+      "kind": "phone-number",
+      "line": 250
+    },
+    {
+      "file": "python-review.md",
+      "kind": "phone-number",
+      "line": 24
+    }
+  ]
+}
