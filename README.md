@@ -72,4 +72,4 @@ Web 요청이 DB 저장으로 이어지는 흐름을 이해하는 보조 경험�
 - 실제 비밀번호와 Key는 대체값으로 처리합니다. 설정 조각은 환경을 확인한 뒤 사용해야 합니다.
 - Notion의 비로그인 공개 열람은 아직 확인하지 않았습니다.
 - 기존 Git 연습 파일 `f1.txt`, `f2.txt`와 저장소 이름 `github-practice`는 유지합니다.
-- [Profile README 초안](profile/README.md)은 계정 Profile에 아직 적용되지 않았습니다.
+- [GitHub Profile](https://github.com/cod9736-source)에서 대표 실습과 문서로 이동할 수 있습니다.
