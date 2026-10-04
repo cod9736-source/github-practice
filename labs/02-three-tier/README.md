@@ -6,7 +6,7 @@ VyOS의 주소 변환을 통해 외부 HTTP 요청을 웹 서버로 전달하고
 
 ## 현재 증거 상태
 
-- 확보: 장비별 설정 명령, 웹·DB 연결값, 어댑터와 DB 주소 설정 화면이 연결된 원문.
+- 확보: 장비별 설정 명령, 웹·DB 연결값, 어댑터와 DB 주소 설정 화면이 연결된 원문. 추가 회수한 과제 프로그램 15개 파일과 실제 SQL 스키마 원문.
 - 미확보: 실제 HTTP 응답, DB 입력·재조회 결과, 한글 저장 결과, 재부팅 후 검증 출력.
 - 이번 문서 검토에서 실제 장비 명령을 실행하지 않았습니다. 설정을 기록했다는 사실과 검증 완료를 구분합니다.
 - VyOS는 1.3 문법을 기준으로 정리했으며 실제 설치 버전 출력은 확보하지 못했습니다.
@@ -70,7 +70,7 @@ flowchart TD
 ## 재사용 범위와 미완료 항목
 
 - `.conf`, `.sql`, `.example`은 원문에서 분리한 설정 조각입니다. `database-settings.py.example`은 완전한 애플리케이션이 아닙니다.
-- 실제 `fastapi_3tier_v3.zip`과 `webtest_DB.sql` 본문은 확보하지 못해 대체 코드나 테이블 정의를 만들지 않았습니다.
+- 2026-10-04에 9월 22일 첨부된 실제 `fastapi_3tier_v3(2).zip`과 내부 `webtest_DB.sql`을 회수했습니다. [원본 SQL](../03-domain/recovery/webtest_DB.sql)과 [비밀값 제거 과제 프로그램](../03-domain/recovery/fastapi-3tier-training-template-sanitized.zip)을 제공합니다. 이 첨부본을 초기 Lab 02 서버의 최종 배포 Export로 단정하지 않습니다.
 - WebTest 생성은 제공 SQL이 선행되어야 합니다. 계정·프로그램 비밀번호는 같은 실습값으로 변경합니다.
 - `/var/www/html/database.py` 배치와 root 비밀번호 SSH 허용은 당시 실습 기록입니다. 현재 자료에는 소스 HTTP 차단이나 운영용 계정 분리의 검증 결과가 없습니다.
 - DB의 특정 출발지 accept 규칙만으로 나머지 출발지 차단을 단정하지 않습니다. 활성 zone과 기존 허용 규칙, 실제 거부 결과가 필요합니다.
@@ -79,3 +79,7 @@ flowchart TD
 ## 출처
 
 [SOURCE_MANIFEST.json](SOURCE_MANIFEST.json)은 각 파일의 원문 페이지·토글·코드 블록 번호·추출 시 편집시간·변환 내역을 연결합니다. 원문 설정을 재사용 파일로 분리했으며 실행 성공을 재현한 것은 아닙니다.
+
+## 과거 첨부 자료 회수
+
+원본 SQL은 `WebTest`·`member`·`board` 생성문이며 사용자 데이터가 없습니다. 공개 프로그램은 제공된 수업 자료로, 애플리케이션 개발 성과로 제시하지 않습니다. `database.py`의 비밀값과 비밀값 포함 디버그 출력만 제거했습니다. 후속 Domain 실습의 실제 결과 화면을 이 기본 실습의 성공 증거로 혼합하지 않습니다. [회수 출처와 범위](../03-domain/recovery/RECOVERED_SOURCES.md)
