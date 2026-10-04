@@ -1,0 +1,36 @@
+apiVersion: apps/v1                    # Deployment API 버전 지정
+kind: Deployment                       # Deployment Resource 생성
+
+metadata:                              # Deployment 메타데이터 영역
+  name: git-web                        # Deployment 이름 지정
+  namespace: git-k8s                   # git-k8s Namespace에 생성
+  labels:                              # Deployment Label 설정
+    app: git-web                       # 애플리케이션 식별 Label 지정
+
+spec:                                  # Deployment 설정 영역
+  replicas: 2                          # Pod 2개 실행
+
+  selector:                            # 관리할 Pod 선택 조건 지정
+    matchLabels:                       # Pod Label 조건 지정
+      app: git-web                     # app=git-web Pod 선택
+
+  template:                            # Pod 템플릿 설정
+    metadata:                          # Pod 메타데이터 영역
+      labels:                          # Pod Label 설정
+        app: git-web                   # Service에서 사용할 Label 지정
+
+    spec:                              # Pod 실행 설정 영역
+      containers:                      # Container 목록 정의
+        - name: web                    # Container 이름 지정
+          image: nginx:1.27-alpine     # Nginx Image 지정
+
+          ports:                       # Container 포트 설정
+            - containerPort: 80        # Nginx HTTP 포트 지정
+
+          resources:                   # Container Resource 설정
+            requests:                  # 최소 보장 Resource 설정
+              cpu: 100m                # CPU 최소 요청량 지정
+              memory: 64Mi             # Memory 최소 요청량 지정
+            limits:                    # 최대 Resource 설정
+              cpu: 500m                # CPU 최대 사용량 지정
+              memory: 128Mi            # Memory 최대 사용량 지정

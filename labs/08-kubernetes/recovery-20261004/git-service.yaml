@@ -1,0 +1,16 @@
+apiVersion: v1                         # Kubernetes API 버전 지정
+kind: Service                          # Service Resource 생성
+
+metadata:                              # Service 메타데이터 영역
+  name: git-web-service                # Service 이름 지정
+  namespace: git-k8s                   # git-k8s Namespace에 생성
+
+spec:                                  # Service 설정 영역
+  type: ClusterIP                      # Cluster 내부 접근용 Service 지정
+
+  selector:                            # 연결할 Pod 선택 조건 지정
+    app: git-web                        # app=git-web Pod 선택
+
+  ports:                               # Service 포트 설정
+    - port: 80                         # Service 포트 지정
+      targetPort: 80                   # Pod의 80번 포트로 전달

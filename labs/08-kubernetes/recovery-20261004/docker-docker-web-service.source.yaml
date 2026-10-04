@@ -1,0 +1,13 @@
+# 2026-10-02 수업 화면에서 회수한 원문 설정. 개인 Cluster Export가 아님.
+apiVersion: v1
+kind: Service
+metadata:
+  name: docker-web-service
+  namespace: docker-k8s
+spec:
+  type: ClusterIP
+  selector:
+    app: docker-web
+  ports:
+    - port: 80
+      targetPort: 80

@@ -1,0 +1,32 @@
+# 2026-10-02 수업 화면에서 회수한 원문 설정. 개인 Cluster Export가 아님.
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: docker-web
+  namespace: docker-k8s
+  labels:
+    app: docker-web
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: docker-web
+  strategy:
+    type: RollingUpdate
+  template:
+    metadata:
+      labels:
+        app: docker-web
+    spec:
+      containers:
+        - name: web
+          image: <DockerHub사용자명>/k8s-web:v1
+          ports:
+            - containerPort: 80
+          resources:
+            requests:
+              cpu: 100m
+              memory: 64Mi
+            limits:
+              cpu: 500m
+              memory: 128Mi
