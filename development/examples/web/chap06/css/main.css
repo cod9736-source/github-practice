@@ -1,0 +1,16 @@
+body {
+  /* body에 적용된 스타일은 상속되어 모든 태그에 적용됨*/
+  color: navy;
+}
+
+div {
+  /* 테두리는 상속되지 않는다 */
+  border: 2px solid orangered;
+  /* div에 적용된 스타일은 상속되어 div안의 모든 태그에 적용됨*/
+  color: green;
+}
+
+p {
+  /* p에 직접 스타일 적용시 상속 스타일은 무시됨*/
+  color: black;
+}
