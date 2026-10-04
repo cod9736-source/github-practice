@@ -28,7 +28,7 @@ Notion에 흩어져 있던 개발 설명, 코드와 이미지를 주제별로 �
 
 ## Infrastructure
 
-인프라의 구성·명령어·네트워크 흐름·검증 화면·문제 해결 기록은 **[Notion 인프라 포트폴리오](https://app.notion.com/p/3e2ddb1a637780dcb8fdf5fb65c7328e)**에서 확인할 수 있습니다.
+인프라의 구성·명령어·네트워크 흐름·검증 화면·문제 해결 기록은 [Notion 인프라 포트폴리오](https://app.notion.com/p/3e2ddb1a637780dcb8fdf5fb65c7328e)에서 확인할 수 있습니다.
 
 [인프라 설정·코드 전체 자료](https://app.notion.com/p/3efddb1a637781b9bbf3d0fc89964977)에서 원문과 출처를 확인할 수 있습니다.
 
