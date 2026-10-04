@@ -1,6 +1,12 @@
-# Kubernetes 학습 설정과 검증 기준
+# LAB 08 / CONTAINER · Pod Deployment & Diagnosis
 
-[원문](https://app.notion.com/p/098ddb1a63778206966701fc28c7fcfb)의 실제 코드 블록에서 Manifest 4개를 추출했다. 아래 4개는 운영 Cluster에서 Export한 파일이나 개인 실행 성공 증거로 표시하지 않는다. 2026-10-04 추가 회수한 [개인 실행 증거](recovered-evidence.md)에는 nginx Pod 실행·삭제, 개인 v1 Image Build와 Pod 실행, hostPath 장애 기록이 있다. 이미지·복제본·Label은 원문대로 유지했으며 다중 Container 예시의 비밀번호만 치환했다.
+개인 v1 Image Build, Pod 실행·삭제, hostPath Mount 장애를 실제 출력으로 기록했습니다. Image 생성·Registry 접근·Pod 상태·Service 응답을 별도 단계로 구분합니다.
+
+[Notion 상세 Lab](https://app.notion.com/p/3efddb1a637781e081c6f06d07a75d5a) · [개인 실행·장애 근거](recovered-evidence.md)
+
+## 원문 Manifest와 적용 범위
+
+[Study Notes 원문](https://app.notion.com/p/098ddb1a63778206966701fc28c7fcfb)의 실제 코드 블록에서 Manifest 4개를 추출했다. 아래 4개는 운영 Cluster에서 Export한 파일이나 개인 실행 성공 증거로 표시하지 않는다. 2026-10-04 추가 회수한 [개인 실행 증거](recovered-evidence.md)에는 nginx Pod 실행·삭제, 개인 v1 Image Build와 Pod 실행, hostPath 장애 기록이 있다. 이미지·복제본·Label은 원문대로 유지했으며 다중 Container 예시의 비밀번호만 치환했다.
 
 | 파일 | 목적 | 확인할 결과 | 현재 근거의 한계 |
 | --- | --- | --- | --- |
