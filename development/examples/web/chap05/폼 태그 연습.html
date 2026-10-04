@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>폼 태그 연습</title>
+  </head>
+  <body>
+    <h1>회원 가입</h1>
+    <form action="#" method="POST">
+      <label for="username">사용자 이름:</label>
+      <input type="text" id="username" name="username" required />
+      <br /><br />
+      <label for="email">이메일:</label>
+      <input type="email" id="email" name="email" required />
+      <br /><br />
+      <label for="password">비밀번호:</label>
+      <input type="password" id="password" name="password" required />
+      <br /><br />
+      <label for="gender">성별:</label>
+      <input type="radio" id="male" name="gender" value="male" required />
+      <label for="male">남성</label>
+      <input type="radio" id="female" name="gender" value="female" required />
+      <label for="female">여성</label>
+      <!--radio에서는 name을 지정해야 둘 중 하나만 선택 가능 
+      name이 없으면 둘 다 선택 가능-->
+      <br /><br />
+      <label for="hobbies">취미:</label>
+      <input type="checkbox" id="reading" name="hobbies" value="reading" />
+      <label for="reading">독서</label>
+      <input type="checkbox" id="sports" name="hobbies" value="sports" />
+      <label for="sports">스포츠</label>
+      <input type="checkbox" id="music" name="hobbies" value="music" />
+      <label for="music">음악</label>
+      <br /><br />
+      <select id="country" name="country" required>
+        <option value="">국가 선택</option>
+        <option value="korea" selected>대한민국</option>
+        <option value="usa">미국</option>
+        <option value="japan">일본</option>
+      </select>
+      <br /><br />
+      <label for="profile">프로필 사진</label>
+      <input type="file" id="profile" />
+      <br /><br />
+      <textarea
+        rows="5"
+        cols="50"
+        style="resize: none"
+        placeholder="자기소개를 입력하세요"
+        autofocus
+      ></textarea>
+      <!--cols="50"는 50 글자를 쓸 수 있습니다-->
+      <br /><br />
+      <input type="reset" value="초기화" />
+      <input type="submit" value="회원 가입" />
+    </form>
+  </body>
+</html>
