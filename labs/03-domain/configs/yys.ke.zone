@@ -1,0 +1,15 @@
+; Source: .기초수업 > 3Tier Web DNS추가 > DNS 구성 > 도메인과 IP 등록
+; Recorded zone content, not fetched from the running DNS server.
+$TTL 3600
+@ IN SOA ns.yys.ke. root.yys.ke. (
+    2026092201
+    3600
+    900
+    604800
+    300
+)
+@   IN NS ns.yys.ke.
+ns  IN A 192.168.9.53
+www IN A 10.9.0.80
+was IN A 192.169.9.80
+db  IN A 192.170.9.36
