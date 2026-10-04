@@ -1,0 +1,27 @@
+Source: .기초수업 > 3Tier Web DNS추가 > Vyos 인터페이스 추가설정
+Screenshots 1–5, visually transcribed on 2026-10-02.
+This is a recorded DELTA, not a complete replacement configuration.
+Rules 100/110 and DNAT 1/2 already existed in the referenced setup.
+Do not run against a router with different rule numbers or interfaces.
+
+configure
+set interfaces ethernet eth3 address 192.170.9.1/24
+set interfaces ethernet eth0 address 10.9.0.1/8
+set interfaces ethernet eth0 address 10.9.0.53/8
+delete interfaces ethernet eth2 address 172.16.9.1/24
+set interfaces ethernet eth2 address 192.169.9.1/24
+set nat source rule 100 translation address 10.9.0.1
+set nat source rule 110 source address 192.169.9.0/24
+set nat source rule 110 translation address 10.9.0.1
+set nat source rule 120 outbound-interface eth0
+set nat source rule 120 source address 192.170.9.0/24
+set nat source rule 120 translation address 10.9.0.1
+set nat destination rule 3 inbound-interface eth0
+set nat destination rule 3 destination address 10.9.0.53
+set nat destination rule 3 destination port 53
+set nat destination rule 3 protocol tcp_udp
+set nat destination rule 3 translation address 192.168.9.53
+set nat destination rule 3 translation port 53
+commit
+save
+exit

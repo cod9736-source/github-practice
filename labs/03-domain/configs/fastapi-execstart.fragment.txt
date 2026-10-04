@@ -1,0 +1,5 @@
+Source: .기초수업 > 3Tier Web DNS추가 > WEB → Was 재설정 > 3
+Replace the ExecStart line in the existing /etc/systemd/system/fastapi.service.
+This is not a complete unit or a systemd drop-in. WorkingDirectory/User are not reconstructed.
+
+ExecStart=/usr/bin/python3 -m uvicorn main:app --host 0.0.0.0 --port 8000

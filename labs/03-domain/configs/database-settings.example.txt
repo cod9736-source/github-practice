@@ -1,0 +1,9 @@
+Source: .기초수업 > 3Tier Web DNS추가 > DB재설정 > 7
+Values below are a sanitized excerpt, not a replacement for database.py.
+The original secret has been removed. No account password is committed.
+
+DB_USER = "yongsu"
+DB_PASS = "<SET_LOCAL_SECRET>"
+DB_HOST = "db.yys.ke"
+DB_PORT = "3306"
+DB_NAME = "WebTest"

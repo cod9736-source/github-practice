@@ -1,0 +1,4 @@
+# Source: .기초수업 > 3Tier Web DNS추가 > DB재설정 > 3
+# Replace the existing bind-address in /etc/my.cnf.d/99-kedu.cnf.
+# Preserve its existing section, encoding and other settings.
+bind-address=192.170.9.36
