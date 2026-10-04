@@ -1,0 +1,4 @@
+# 운영체제 보안 정책에서 Apache의 Network 연결 허용
+setsebool -P httpd_can_network_connect on
+# 변경한 Apache 설정 적용 및 실행
+systemctl restart httpd

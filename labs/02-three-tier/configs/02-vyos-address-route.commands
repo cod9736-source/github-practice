@@ -1,0 +1,18 @@
+# 설정 모드 진입
+configure
+# 외부망 단자 주소
+set interfaces ethernet eth0 address '10.9.0.80/8'
+# Web Server망의 Gateway 주소
+set interfaces ethernet eth1 address '192.168.9.1/24'
+# Database망의 Gateway 주소
+set interfaces ethernet eth2 address '172.16.9.1/24'
+# 목적지를 별도로 모를 때 외부 공유기로 전달
+set protocols static route 0.0.0.0/0 next-hop '10.0.0.1'
+# Router의 Domain 이름 조회 Server
+set system name-server '8.8.8.8'
+# 현재 설정 적용
+commit
+# 재부팅 후에도 유지하도록 저장
+save
+# 운영 모드로 복귀
+exit

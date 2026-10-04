@@ -1,0 +1,2 @@
+# Database 설정 파일 열기
+vi /etc/my.cnf.d/99-kedu.cnf

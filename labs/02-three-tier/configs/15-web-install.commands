@@ -1,0 +1,6 @@
+# Apache와 원격 접속 Server 설치
+dnf install -y httpd openssh-server
+# Python·개발 도구·설치 도구·압축 해제 도구 설치
+dnf install -y python3 python3-devel python3-pip gcc unzip
+# 응용 프로그램 실행에 필요한 Package 설치
+pip3 install --user fastapi uvicorn sqlalchemy pymysql cryptography python-multipart

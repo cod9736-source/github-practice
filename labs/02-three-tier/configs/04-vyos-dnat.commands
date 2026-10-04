@@ -1,0 +1,30 @@
+# 설정 모드 진입
+configure
+# 외부 단자로 들어오는 Web 요청
+set nat destination rule 1 inbound-interface 'eth0'
+# 외부 사용자가 접속한 주소
+set nat destination rule 1 destination address '10.9.0.80'
+# 외부에서 받는 Web 접속 Port
+set nat destination rule 1 destination port '80'
+# Web 요청의 전송 방식
+set nat destination rule 1 protocol 'tcp'
+# 내부 Web Server로 목적지 변환
+set nat destination rule 1 translation address '192.168.9.80'
+# 내부 Web Server의 80번으로 전달
+set nat destination rule 1 translation port '80'
+# 외부 단자로 들어오는 원격 접속
+set nat destination rule 3 inbound-interface 'eth0'
+# 원격 접속에 사용할 외부 주소
+set nat destination rule 3 destination address '10.9.0.80'
+# 원격 접속과 파일 전송 Port
+set nat destination rule 3 destination port '22'
+# 원격 접속의 전송 방식
+set nat destination rule 3 protocol 'tcp'
+# 원격 접속을 내부 Web Server로 전달
+set nat destination rule 3 translation address '192.168.9.80'
+# 현재 규칙 적용
+commit
+# 재부팅 후에도 유지
+save
+# 운영 모드로 복귀
+exit

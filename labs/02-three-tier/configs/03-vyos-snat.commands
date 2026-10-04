@@ -1,0 +1,20 @@
+# 설정 모드 진입
+configure
+# Web Server망에서 출발한 통신
+set nat source rule 1 source address '192.168.9.0/24'
+# 외부 단자로 나가는 경우에 적용
+set nat source rule 1 outbound-interface 'eth0'
+# 출발지를 외부 단자의 주소로 변환
+set nat source rule 1 translation address 'masquerade'
+# Database망에서 출발한 통신
+set nat source rule 2 source address '172.16.9.0/24'
+# 외부 단자로 나가는 경우에 적용
+set nat source rule 2 outbound-interface 'eth0'
+# 출발지를 외부 단자의 주소로 변환
+set nat source rule 2 translation address 'masquerade'
+# 규칙 적용
+commit
+# 규칙 저장
+save
+# 운영 모드로 복귀
+exit

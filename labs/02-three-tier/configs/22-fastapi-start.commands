@@ -1,0 +1,4 @@
+# 과제 프로그램 폴더로 이동
+cd /var/www/html
+# FastAPI 프로그램 직접 실행
+python3 main.py

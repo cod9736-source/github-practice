@@ -1,0 +1,8 @@
+# 방화벽 설정을 위해 서비스 실행
+systemctl start firewalld
+# Web 접속과 원격 접속·파일 전송 허용
+firewall-cmd --permanent --add-service=http --add-service=ssh
+# 저장한 방화벽 규칙 적용
+firewall-cmd --reload
+# 원격 접속 설정 적용
+systemctl restart sshd

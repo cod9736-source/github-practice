@@ -1,0 +1,10 @@
+# Database 접속 계정
+DB_USER = "kedu"
+# Database에서 생성한 계정과 같은 비밀번호
+DB_PASS = "CHANGE_ME_DB_PASSWORD"
+# Database Server의 내부 주소
+DB_HOST = "172.16.9.36"
+# Database 접속 Port
+DB_PORT = "3306"
+# 사용할 Database 이름
+DB_NAME = "WebTest"

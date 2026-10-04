@@ -1,0 +1,7 @@
+[mysqld]
+# 한글과 이모지를 저장하는 문자 형식
+character-set-server=utf8mb4
+# 문자열 비교와 정렬 규칙
+collation-server=utf8mb4_unicode_ci
+# 이 Server의 Database망 주소에서 접속 받기
+bind-address=172.16.9.36

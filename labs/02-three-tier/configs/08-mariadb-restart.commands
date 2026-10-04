@@ -1,0 +1,2 @@
+# 변경한 설정 적용
+systemctl restart mariadb

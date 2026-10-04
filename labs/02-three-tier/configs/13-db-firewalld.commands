@@ -1,0 +1,6 @@
+# 방화벽을 실행하고 부팅 시 자동 실행
+systemctl enable --now firewalld
+# Web Server 192.168.9.80에서 오는 Database 접속 허용
+firewall-cmd --permanent --add-rich-rule='rule family="ipv4" source address="192.168.9.80/32" port port="3306" protocol="tcp" accept'
+# 저장한 방화벽 규칙 적용
+firewall-cmd --reload

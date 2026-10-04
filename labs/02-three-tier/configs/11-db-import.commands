@@ -1,0 +1,4 @@
+# 제공된 파일의 SQL을 Database에 순서대로 실행
+mariadb -u root -p < /tmp/webtest_DB.sql
+# 권한을 부여하기 위해 관리자로 다시 접속
+mariadb -u root -p

@@ -1,0 +1,4 @@
+-- Web Server 주소에서 접속하는 전용 계정 생성
+CREATE USER 'kedu'@'192.168.9.80' IDENTIFIED BY 'CHANGE_ME_DB_PASSWORD';
+-- Linux Terminal로 돌아가기
+EXIT;

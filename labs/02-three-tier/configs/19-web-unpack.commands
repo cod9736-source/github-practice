@@ -1,0 +1,4 @@
+# Apache Web 문서 폴더에 압축 해제
+unzip "/tmp/webapp.zip" -d /var/www/html
+# Database 접속 정보 파일 열기
+vi /var/www/html/database.py

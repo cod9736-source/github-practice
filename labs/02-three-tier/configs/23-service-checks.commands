@@ -1,0 +1,6 @@
+# Database Server: 서비스 실행 확인
+systemctl is-active mariadb
+# Web Server: Apache 실행 확인
+systemctl is-active httpd
+# Web Server: Apache 설정 문법 확인
+httpd -t
