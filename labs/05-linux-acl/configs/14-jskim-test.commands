@@ -1,0 +1,5 @@
+cd /data/workspace/backend/dhlee
+rm /data/workspace/backend/shared.txt
+mkdir /data/workspace/leaders/2026_plan
+touch /data/workspace/leaders/2026_plan/plan.txt
+getfacl /data/workspace/leaders/minutes.txt /data/workspace/leaders/2026_plan /data/workspace/leaders/2026_plan/plan.txt

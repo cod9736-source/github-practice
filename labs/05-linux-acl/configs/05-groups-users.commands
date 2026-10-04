@@ -1,0 +1,11 @@
+groupadd infra
+groupadd backend
+groupadd frontend
+groupadd dba
+useradd -m -g infra shkang
+useradd -m -g backend jskim
+useradd -m -g backend dhlee
+useradd -m -g backend syjung
+useradd -m -g frontend mjchoi
+useradd -m -g frontend hwpark
+useradd -m -g dba hjnam

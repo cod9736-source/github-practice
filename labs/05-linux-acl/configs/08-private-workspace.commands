@@ -1,0 +1,10 @@
+mkdir infra/shkang backend/{jskim,dhlee,syjung} frontend/{mjchoi,hwpark} dba/hjnam
+chown shkang:infra infra/shkang
+chown jskim:backend backend/jskim
+chown dhlee:backend backend/dhlee
+chown syjung:backend backend/syjung
+chown mjchoi:frontend frontend/mjchoi
+chown hwpark:frontend frontend/hwpark
+chown hjnam:dba dba/hjnam
+chmod =700 infra/shkang backend/{jskim,dhlee,syjung} frontend/{mjchoi,hwpark} dba/hjnam
+setfacl -dm u::rwx,g::---,o::--- infra/shkang backend/{jskim,dhlee,syjung} frontend/{mjchoi,hwpark} dba/hjnam

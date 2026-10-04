@@ -1,0 +1,2 @@
+dnf install -y acl openssh-server
+firewall-cmd --permanent --add-service=ssh

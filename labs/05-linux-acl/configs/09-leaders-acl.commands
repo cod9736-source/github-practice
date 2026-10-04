@@ -1,0 +1,5 @@
+chown root:root leaders
+chmod 700 leaders
+setfacl -m u:shkang:rwx,u:jskim:rwx,u:mjchoi:rwx,u:hjnam:rwx leaders
+setfacl -dm u::rwx,g::---,o::---,u:shkang:rwx,u:jskim:rwx,u:mjchoi:rwx,u:hjnam:rwx leaders
+touch leaders/minutes.txt

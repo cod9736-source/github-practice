@@ -1,0 +1,9 @@
+mkdir -p /data/workspace/{infra,backend,frontend,dba,leaders}
+chmod 755 /data /data/workspace
+cd /data/workspace
+chown root:infra infra
+chown root:backend backend
+chown root:frontend frontend
+chown root:dba dba
+chmod 3775 infra backend frontend dba
+setfacl -dm u::rwx,g::rwx,o::rx infra backend frontend dba

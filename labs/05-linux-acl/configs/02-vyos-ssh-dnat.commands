@@ -1,0 +1,10 @@
+configure
+set interfaces ethernet eth0 address 10.9.0.22/8
+set nat destination rule 22 inbound-interface eth0
+set nat destination rule 22 destination address 10.9.0.22
+set nat destination rule 22 destination port 22
+set nat destination rule 22 protocol tcp
+set nat destination rule 22 translation address 192.169.9.22
+commit
+save
+exit

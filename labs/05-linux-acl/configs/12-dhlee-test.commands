@@ -1,0 +1,6 @@
+touch /data/workspace/frontend/blocked.txt
+cd /data/workspace/leaders
+touch /data/workspace/backend/dhlee/private.txt
+touch /data/workspace/backend/shared.txt
+ls -l /data/workspace/backend/dhlee/private.txt /data/workspace/backend/shared.txt
+exit
