@@ -1,0 +1,17 @@
+Source: .기초수업 > 3Tier Web DNS추가 > DB재설정 > 5, 8
+These are recorded CHECK COMMANDS, not captured output. No verification was run against the lab during this audit.
+
+[DB]
+ip -br addr
+ip route
+systemctl is-active mariadb
+ss -lntp 'sport = :3306'
+firewall-cmd --list-all
+
+[WAS]
+getent hosts db.yys.ke
+curl --noproxy "*" --retry 5 --retry-connrefused --retry-delay 1 --max-time 20 -i http://127.0.0.1:8000/api/board/list
+
+Expected DNS answer: 192.170.9.36
+Application criterion: board data or [] with no application failure field; HTTP 200 alone is insufficient.
+The source note reports successful login, board listing, creating and reopening a post on 2026-09-25. Raw output/screenshots of that success are not attached in the audited source section.
