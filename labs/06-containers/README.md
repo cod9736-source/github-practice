@@ -54,4 +54,4 @@ docker network ls             # Network 삭제 확인
 
 명령이 적혀 있다는 사실과 실행 성공은 다르다. 네트워크는 연결 대상·실제 주소·응답을, PostgreSQL은 Table 생성과 조회 결과를 각각 남겨야 한다. `1 | abc`는 기대 출력이며 이번 정리 과정에서 실행하거나 관측한 결과가 아니다.
 
-전체 Dockerfile, 고정 Image Digest, 업로드 결과, 영구 Volume 설정·재생성 후 데이터 보존 결과는 현재 원문에 없다. 따라서 이 저장소에 해당 구현 파일이나 성공 로그를 새로 만들어 넣지 않았다.
+기존 `myimg:v1`의 전체 Dockerfile, 고정 Image Digest, 업로드 결과와 영구 Volume의 데이터 보존 결과는 미확보 상태다. 2026-10-04 추가 회수한 [실제 설치·실행 및 오류 기록](recovered-evidence.md)에서 Docker 패키지 설치와 hello-world 정상 종료를 확인했다. 별도 Kubernetes 연계 실습의 Dockerfile·개인 v1 Build는 [Kubernetes 기록](../08-kubernetes/recovered-evidence.md)에서 구분한다.
