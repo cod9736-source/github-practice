@@ -1,35 +1,36 @@
 # 유용수 · yongsoo
 
+**Infrastructure · Cloud · Network Engineer를 목표로 합니다.**
+
+Linux와 가상 인프라를 구성하고, 실제 출력으로 연결 상태와 장애 원인을 확인합니다. 설정 파일·실행 화면·문제 해결 기록을 함께 관리합니다.
+
 ## Focus
 
-**Infrastructure · Cloud · Network**
+Linux Server · Routing / NAT · DNS · Container · Virtualization · Troubleshooting
 
-Linux Server와 Network를 구성하며 설정이 요청 흐름과 Service 동작에 미치는 영향을 학습합니다. 장비별 설정, 문제를 확인한 과정, 검증 결과를 연결해 기록합니다.
+## Featured Labs
 
-## Selected Labs
-
-| 실습 | 핵심 내용 | 자료 |
+| 실습 | 실제 확인한 범위 | 자료 |
 |---|---|---|
-| Network | VLAN·Trunk·SVI·RIP v2 | [GitHub](https://github.com/cod9736-source/github-practice/tree/main/labs/01-packet-tracer) · [Notion](https://app.notion.com/p/3e3ddb1a6377814098b1f6f3d4f9ad96) |
-| Web·DB | VyOS NAT·Apache·FastAPI·MariaDB 연결 | [GitHub](https://github.com/cod9736-source/github-practice/tree/main/labs/02-three-tier) · [Notion](https://app.notion.com/p/3e3ddb1a6377810f8416ec6ce8471c71) |
-| Domain | DNS·Web/WAS/DB 분리·접속 오류 점검 | [GitHub](https://github.com/cod9736-source/github-practice/tree/main/labs/03-domain) · [Notion](https://app.notion.com/p/3e3ddb1a637781af9665f2df397232d6) |
+| Domain & Server Recovery | DNS 응답·FastAPI 기동 확인, WAS 파일 누락과 DB 주소 불일치 추적 | [GitHub](https://github.com/cod9736-source/github-practice/tree/main/labs/03-domain) · [Notion](https://app.notion.com/p/3e3ddb1a637781af9665f2df397232d6) |
+| iSCSI Storage Connection | ESXi Host 2대 등록, TrueNAS Target–Extent 설정과 두 번째 Host의 Disk 연결 확인 | [GitHub](https://github.com/cod9736-source/github-practice/tree/main/labs/07-vsphere) · [Notion](https://app.notion.com/p/3efddb1a637781ebac8dfd2ad3efa622) |
+| Pod Deployment & Diagnosis | 개인 v1 Image Build·Pod 실행·삭제 확인, hostPath Mount 장애 추적 | [GitHub](https://github.com/cod9736-source/github-practice/tree/main/labs/08-kubernetes) · [Notion](https://app.notion.com/p/3efddb1a637781e081c6f06d07a75d5a) |
+
+단계별 실행 근거를 제시하며, 미해결 장애와 최종 기능 검증이 필요한 항목은 각 Lab에서 구분합니다.
 
 ## Tech Stack
 
-| 기록 범위 | 기술 |
+| 실제 구성·실행 기록 | 기술 |
 |---|---|
-| Network·Server 실습 설정 | Packet Tracer, VyOS, VLAN, RIP v2, NAT, Linux, DNS, Apache, FastAPI, MariaDB, VMware |
-| 과제·수업 예제 학습 | Linux ACL, Sophos UTM, Docker, PostgreSQL, vSphere, Kubernetes |
-| 개발 프로젝트 기여 | Java, Spring Boot, MyBatis, MySQL — 독서·EXP 기능 |
-
-기술별 적용 범위와 실행 증빙은 각 Lab에서 구분합니다.
+| Network & Server | Linux, VyOS, NAT, DNS, Apache, FastAPI, MariaDB |
+| Container & Virtualization | Docker, Kubernetes, VMware, ESXi, vCenter, TrueNAS, iSCSI |
 
 ## Documentation
 
-- [전체 실습과 설정 파일](https://github.com/cod9736-source/github-practice)
-- [Notion 인프라 포트폴리오](https://app.notion.com/p/3e2ddb1a637780dcb8fdf5fb65c7328e) — 비로그인 공개 열람 미확인
-- [EduPOP 개인 기여](https://github.com/cod9736-source/github-practice#개발-경험) — 실제 Commit 근거
+- [Notion Infrastructure Portfolio](https://app.notion.com/p/3e2ddb1a637780dcb8fdf5fb65c7328e)
+- [설정 파일·실행 근거·학습 자료](https://github.com/cod9736-source/github-practice)
+- [EduPOP 개인 기여](https://github.com/cod9736-source/github-practice#개발-경험) — 독서·EXP 기능의 실제 Commit 근거
 
 ## Current Learning
 
-Kubernetes의 Pod·Deployment·DaemonSet 선언과 상태 확인을 학습하고 있습니다. Manifest와 실제 Cluster 출력의 대응을 다음 검증 과제로 정리합니다.
+Kubernetes의 Deployment·Service·Storage를 학습하고 있습니다. Image 생성, Pod 상태, Service 응답, 데이터 보존을 각각 확인하는 검증 흐름을 보완하고 있습니다.
