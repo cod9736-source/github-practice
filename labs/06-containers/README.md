@@ -1,6 +1,14 @@
-# Docker 명령과 데이터베이스 학습 기록
+# LAB 06 / CONTAINER · Container Execution
 
-[현재 Notion 원문](https://app.notion.com/p/3e3ddb1a63778197bd03da0ffc701872)에 있는 명령 블록을 역할별로 추출했다. 설치 Script나 Dockerfile로 꾸며 만들지 않았다. 원문 자체에 재실습용 보완 명령이 포함되어 있으며 실행 결과와 동일한 자료는 아니다.
+Docker 패키지 설치와 `hello-world` Container 정상 종료를 실제 화면으로 확인한 기록입니다. Image 삭제 참조 충돌과 Docker Socket 접근 권한 오류를 실행 단계별로 구분했습니다.
+
+[Notion 상세 Lab](https://app.notion.com/p/3efddb1a63778109a3a9e8db85b8cd39) · [개인 실행·오류 근거](recovered-evidence.md)
+
+Bridge·PostgreSQL은 아래에 보존한 학습 범위입니다. 통신·조회·영구 저장 성공은 아직 확인되지 않았습니다.
+
+## 학습 설정 원문
+
+[Study Notes 원문](https://app.notion.com/p/3e3ddb1a63778197bd03da0ffc701872)에 있는 명령 블록을 역할별로 추출했다. 설치 Script나 Dockerfile로 꾸며 만들지 않았다. 원문 자체에 재실습용 보완 명령이 포함되어 있으며 실행 결과와 동일한 자료는 아니다.
 
 ## 기본 Bridge와 사용자 정의 Bridge
 
